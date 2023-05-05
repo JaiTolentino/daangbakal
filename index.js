@@ -16,3 +16,7 @@ app.use(express.json());
 app.use(express.static('views'));
 app.set('view engine', 'hbs');
 app.use('/', httprequests);
+
+app.listen(5000, () => { // used to start a server in my local device
+    console.log("server started on port 5000")
+})
