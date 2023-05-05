@@ -16,7 +16,3 @@ app.use(express.json());
 app.use(express.static('views'));
 app.set('view engine', 'hbs');
 app.use('/', httprequests);
-
-app.listen(5000, () => {
-    console.log("Started on port 5000");
-});

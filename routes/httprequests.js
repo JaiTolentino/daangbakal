@@ -258,6 +258,9 @@ app.get("/chmaddadmin", (req, res) => {
 })
 
 app.get("/headhome", (req, res) => {
+  console.log(req.session.familyhead)
+  console.log(req.session.email)
+  console.log(req.session.familycode)
   res.render("headhome")
 })
 
