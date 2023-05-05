@@ -10,8 +10,6 @@ const functions = require('./functions');
 const bcrypt = require('bcrypt');
 const {create} = require('hbs');
 
-app.enable('trust proxy')
-
 app.get("/", (req, res) => {
     res.render("index")
 })
