@@ -828,6 +828,7 @@ app.post("/login", upload.none(), (req, res) => {
                             req.session.familyhead = true;
                             req.session.email  = results[0].email;
                             req.session.familycode = results[0].familycode
+                            console.log(results[0].email)
                             res.redirect("/headhome");
                         } else {
                             res.render('login',{message: "Password does not match!"})
