@@ -10,6 +10,8 @@ const fs = require('fs');
 const functions = require('./functions');
 const bcrypt = require('bcrypt');
 
+app.enable('trust proxy')
+
 app.use(session ({
     secret: mysecret,
     resave: false,

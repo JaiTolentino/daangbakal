@@ -6,6 +6,7 @@ const {create} = require('hbs');
 const crypto = require('crypto');
 const mysecret = crypto.randomBytes(32).toString('hex');
 
+app.enable('trust proxy')
 app.use(session ({
     secret: mysecret,
     resave: false,
@@ -262,47 +263,33 @@ app.get("/headhome", (req, res) => {
 })
 
 app.get("/headannouncements", (req, res) => {
-  if (req.session.familyhead){
+  if (!req.session.familyhead){
+    res.redirect("/")
+    }
     pool.query("SELECT * FROM posttable WHERE news_id = 1", (error, results1) => {
-    if(error) console.log(error);
-    pool.query("SELECT * FROM posttable WHERE news_id = 2", (error, results2) => {
-      if(error) console.log(error);
-      pool.query("SELECT * FROM posttable WHERE news_id = 3", (error, results3) => {
         if(error) console.log(error);
-        pool.query("SELECT * FROM posttable WHERE news_id = 4", (error, results4) => {
-          if(error) console.log(error);
-            res.render('headannouncements', {news1: results1, news2: results2, events1: results3, events2: results4})
+        pool.query("SELECT * FROM posttable WHERE news_id = 2", (error, results2) => {
+            if(error) console.log(error);
+            pool.query("SELECT * FROM posttable WHERE news_id = 3", (error, results3) => {
+            if(error) console.log(error);
+            pool.query("SELECT * FROM posttable WHERE news_id = 4", (error, results4) => {
+                if(error) console.log(error);
+                res.render('headannouncements', {news1: results1, news2: results2, events1: results3, events2: results4})
+            })
+            })
         })
-      })
     })
-  })
-}
-else if (req.session.familymember){
-  pool.query("SELECT * FROM posttable WHERE news_id = 1", (error, results1) => {
-    if(error) console.log(error);
-    pool.query("SELECT * FROM posttable WHERE news_id = 2", (error, results2) => {
-      if(error) console.log(error);
-      pool.query("SELECT * FROM posttable WHERE news_id = 3", (error, results3) => {
-        if(error) console.log(error);
-        pool.query("SELECT * FROM posttable WHERE news_id = 4", (error, results4) => {
-          if(error) console.log(error);
-            res.render('headannouncements', {news1: results1, news2: results2, events1: results3, events2: results4})
-        })
-      })
-    })
-  })
-} else if (!req.session.familyhead || !req.session.familymember) {
-  return res.redirect("/");
-}
 })
 
 app.get("/headbarangayofficials", (req, res) => {
   res.render("headbarangayofficials")
 })
 
-app.get("/headpersonalinfo", (req, res) => {
-  if (req.session.familyhead){
-    const email = req.session.emaillogin;
+app.get("/headpersonalinfo", (req, res) => { 
+  if (!req.session.familyhead) {
+    return res.redirect("/");
+  }
+  const email = req.session.emaillogin;
     pool.query("SELECT * FROM familyheadtable WHERE email = ?", [email], (error, results) => {
       if (error) console.log(error);
       else {
@@ -312,13 +299,8 @@ app.get("/headpersonalinfo", (req, res) => {
             res.render('headpersonalinfo', {familyheadtable: results, pendingcert: results2})
           }
         })
-        
       }
     })
-  } else if (!req.session.familyhead || !req.session.familymember) {
-    return res.redirect("/");
-  }
-  
 })
 
 app.get("/headcertificates", (req, res) => {
