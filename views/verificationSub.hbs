@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Anek Gujarati' rel='stylesheet'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body class = "password">
+        <div class = "headcon"></div>
+        <div class = "bodycon">
+            <div class = "security">
+                <img class = "img" alt = "brgy logo" src = "images/logo.png">
+                <h2 class = "title">Information System of Barangay Daang Bakal</h2>
+                <h3 class = "title2">Enter Security Code</h3>
+                <p class = "info">Please check your SMS for a message with your code</p>
+                <form action="/OTPverify" method="post">
+                    <div class = "input">
+                        <input name="OTP" type = "number" placeholder = "Enter Code" required/>
+                        <div class = "code">
+                            <p class = "label">Code was sent to :</p>
+                            {{#each phonenumber}}
+                                <p class = "num">{{phoneNumber}}</p>
+                            {{/each}}
+                        </div>
+                    </div>
+                    <div class = "buttons">
+                        <button class = "cancel" type="button" onclick="window.location.href='/login'">CANCEL</button>
+                        <input class = "continue" type="submit" value="CONTINUE">
+                    </div>
+                </form>
+            </div>
+        </div>
+	</body>
+</html>

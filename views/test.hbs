@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/test" method="post">
+        {{#each output}}
+        <a onclick="document.forms[0].submit()">
+            <div class = "certlist" id = "pendingrow1" data-email="{{email}}">
+                <div class = "firstcont" style="background-color: aqua;">
+                    <p class = "certtxt" id = "namecert1">{{email}}</p>
+                </div>
+                <div class = "secondcont" style="background-color: aquamarine;">
+                    <p class = "certtxt" id = "certcert1">{{phoneNumber}}</p>
+                </div>
+                <div class = "thirdcont" style="background-color: beige;">
+                    <p class = "certtxt" id = "statuscert1">{{address}}</p>
+                </div>
+            </div>
+        </a>
+        {{/each}}
+    </form>
+
+
+    
+</body>
+</html>

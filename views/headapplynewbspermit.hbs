@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Anek Gujarati' rel='stylesheet'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body class = "certapplication">
+        <div class = "headcon">
+            <img class = "logocon" alt = "Brgy Logo" src = "images/logo.png">
+            <h1 class = "brgy">Information System of Barangay Daang Bakal</h1>
+        </div>
+        <div class = "first">
+            <div class = "second">
+                <div class = "bodycon">
+                    <form action = "/submitnewbspermit" enctype="multipart/form-data" method = "POST">
+                        <div class = "certformcont">
+                            <div class = "header">
+                                <p>NEW BUSINESS PERMIT APPLICATION</p>
+                            </div>
+                            {{#each info}}
+                            <div class = "rowcont">
+                                <p class = "labeltxt">REQUESTER USERNAME :</p>
+                                <p class = "datatxt">{{email}}</p>
+                            </div>
+                            <div class = "rowcont">
+                                <p class = "labeltxt">REQUESTER FULL NAME :</p>
+                                <p class = "datatxt">{{fname}} {{lname}}</p>
+                            </div>
+                            {{/each}}
+                            <div class = "rowcont">
+                                <div class = "halfcont">
+                                    <div>
+                                        <p class = "labeltxt">UPLOAD REQUESTER VALID ID :</p>
+                                        <input type = "file" accept = "image/*" required = "true" id = "certupload1" name = "validid"/>
+                                        <label for = "certupload1">
+                                            <img class = "inputicon" alt = "Upload Icon" src = "images/uploadimage.png"/>
+                                            Upload a Photo
+                                        </label>
+                                    </div>          
+                                </div>
+                                <div class = "halfcont">
+                                    <img class = "img" id = "cert1" alt="Add Image" src="images/admannc-icon1.png"/>
+                                </div>
+                            </div>
+                            <div class = "rowcont">
+                                <div class = "halfcont">
+                                    <div>
+                                        <p class = "labeltxt">UPLOAD PROOF OF BUSINESS OWNERSHIP :</p>
+                                        <input type = "file" accept = "image/*" required = "true" id = "certupload2" name = "businessownership"/>
+                                        <label for = "certupload2">
+                                            <img class = "inputicon" alt = "Upload Icon" src = "images/uploadimage.png"/>
+                                            Upload a Photo
+                                        </label>
+                                    </div>          
+                                </div>
+                                <div class = "halfcont">
+                                    <img class = "img" id = "cert2" alt="Add Image" src="images/admannc-icon1.png"/>
+                                </div>
+                            </div>
+                            <div class = "rowcont">
+                                <div class = "halfcont">
+                                    <div>
+                                        <p class = "labeltxt">UPLOAD BARANGAY CLEARANCE :</p>
+                                        <input type = "file" accept = "image/*" required = "true" id = "certupload3" name = "barangayclearance"/>
+                                        <label for = "certupload3">
+                                            <img class = "inputicon" alt = "Upload Icon" src = "images/uploadimage.png"/>
+                                            Upload a Photo
+                                        </label>
+                                    </div>          
+                                </div>
+                                <div class = "halfcont">
+                                    <img class = "img" id = "cert3" alt="Add Image" src="images/admannc-icon1.png"/>
+                                </div>
+                            </div>
+                            <div class = "rowcont">
+                                <div class = "halfcont">
+                                    <div>
+                                        <p class = "labeltxt">UPLOAD MAYOR'S PERMIT :</p>
+                                        <input type = "file" accept = "image/*" required = "true" id = "certupload4" name = "mayorpermit"/>
+                                        <label for = "certupload4">
+                                            <img class = "inputicon" alt = "Upload Icon" src = "images/uploadimage.png"/>
+                                            Upload a Photo
+                                        </label>
+                                    </div>          
+                                </div>
+                                <div class = "halfcont">
+                                    <img class = "img" id = "cert4" alt="Add Image" src="images/admannc-icon1.png"/>
+                                </div>
+                            </div>
+                            <div class = "rowcont">
+                                <div class = "halfcont">
+                                    <div>
+                                        <p class = "labeltxt">UPLOAD FIRE SAFETY INSPECTION CERTIFICATE :</p>
+                                        <input type = "file" accept = "image/*" required = "true" id = "certupload5" name = "firesafetyinspection"/>
+                                        <label for = "certupload5">
+                                            <img class = "inputicon" alt = "Upload Icon" src = "images/uploadimage.png"/>
+                                            Upload a Photo
+                                        </label>
+                                    </div>          
+                                </div>
+                                <div class = "halfcont">
+                                    <img class = "img" id = "cert5" alt="Add Image" src="images/admannc-icon1.png"/>
+                                </div>
+                            </div>
+                            <div class = "rowcont">
+                                <div class = "halfcont">
+                                    <div>
+                                        <p class = "labeltxt">UPLOAD ENVIRONMENTAL CLEARANCE CERTIFICATE :</p>
+                                        <input type = "file" accept = "image/*" required = "true" id = "certupload6" name = "environmentalclearance"/>
+                                        <label for = "certupload6">
+                                            <img class = "inputicon" alt = "Upload Icon" src = "images/uploadimage.png"/>
+                                            Upload a Photo
+                                        </label>
+                                    </div>          
+                                </div>
+                                <div class = "halfcont">
+                                    <img class = "img" id = "cert6" alt="Add Image" src="images/admannc-icon1.png"/>
+                                </div>
+                            </div>
+                            <div class = "rowcont2">
+                                <div class = "btncont">
+                                    <input type = "submit" class = "leftbtn" value = "SUBMIT" onclick = "submitapplication(3)"/>
+                                    <input type = "reset" class = "rightbtn" value = "CANCEL" onclick = "window.location.href = '/headcertificates'"/>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src = "scripts/validateapplication.js"></script>
+        <script src="scripts/previewimage3.js"></script>
+	</body>
+</html>

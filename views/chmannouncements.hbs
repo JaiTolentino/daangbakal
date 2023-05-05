@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Anek Gujarati' rel='stylesheet'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="main" onload="initClock()">
+        <div class="headcon">
+            <div class="logocon">
+                <img alt="brgy logo" src="images/logo.png"/>
+            </div>
+            <h1 class="brgy">Information System of Barangay Daang Bakal</h1>
+            <div class="toptime">
+                <span id = "hour">00</span> :
+                <span id = "minute">00</span>
+                <span id = "period">AM</span>
+            </div>
+        </div>
+        <div class="headcon">
+            <div class = "admintitle">
+                <p>BARANGAY CHAIRMAN</p>
+            </div>
+            <div class="adminbottomtime">
+                <span id = "day">Day</span>,
+                <span id = "month">Month</span>
+                <span id = "date">00</span>
+                <span id = "year">Year</span>
+            </div>
+        </div>
+        <div class = "flex-container">
+            <div class = "admannounce">
+                <div class = "bodycon">
+                    <div class = "header">
+                        <h2 class = "headtxt">Announcements</h2>
+                    </div>
+                    <div class = "posts">
+                        <div class = "crosswise">
+                            <form action = "/news1" enctype="multipart/form-data" method = "POST">
+                                <div class = "crosscont">
+                                    <h3>News Section 1</h3>
+                                    <div class = "flexcont">
+                                        <div>
+                                            <img class = "img" id = "newsimg1" alt="Add Image" src="images/admannc-icon1.png"/>
+                                            <input type = "file" accept = "image/*" required = "true" id = "anncnewsimg1" name = "anncnewsimg1"/>
+                                            <label for = "anncnewsimg1">
+                                                <img class = "inputicon" alt = "Upload Icon" src = "images/uploadimage.png"/>
+                                                Upload a Photo
+                                            </label>
+                                        </div>
+                                        <div class = "posttextcont">
+                                            <p>Header</p>
+                                            <textarea class = "headertxt" required = "true" id = "anncnewsheader1" name = "anncnewsheader1" placeholder = "Write the header of the news post..."></textarea>
+                                            <p>Body</p>
+                                            <textarea class = "bodytxt" required = "true" id = "anncnewsbody1" name = "anncnewsbody1" placeholder = "Write the body of the news post..."></textarea>
+                                            <p>Link</p>
+                                            <textarea class = "linktxt" id = "anncnewslink1" name = "anncnewslink1" placeholder = "Input the link for the news post..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class = "btncont">
+                                        <input type = "submit" value = "SUBMIT" onclick = "anncformclear(1, 1)"/>
+                                        <input type = "reset" value = "CLEAR" onclick = "return anncformclear(1, 2)"/>
+                                    </div>
+                                </div>
+                            </form>
+                            <form action = "/news2" enctype="multipart/form-data" method = "POST">
+                                <div class = "crosscont">
+                                    <h3>News Section 2</h3>
+                                    <div class = "flexcont">
+                                        <div>
+                                            <img class = "img" id = "newsimg2" alt="Add Image" src="images/admannc-icon1.png"/>
+                                            <input type = "file" accept = "image/*" required = "true" id = "anncnewsimg2" name = "anncnewsimg2"/>
+                                            <label for = "anncnewsimg2">
+                                                <img class = "inputicon" alt = "Upload Icon" src = "images/uploadimage.png"/>
+                                                Upload a Photo
+                                            </label>
+                                        </div>
+                                        <div class = "posttextcont">
+                                            <p>Header</p>
+                                            <textarea class = "headertxt" required = "true" id = "anncnewsheader2" name = "anncnewsheader2" placeholder = "Write the header of the news post..."></textarea>
+                                            <p>Body</p>
+                                            <textarea class = "bodytxt" required = "true" id = "anncnewsbody2" name = "anncnewsbody2" placeholder = "Write the body of the news post..."></textarea>
+                                            <p>Link</p>
+                                            <textarea class = "linktxt" id = "anncnewslink2" name = "anncnewslink2" placeholder = "Input the link for the news post..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class = "btncont">
+                                        <input type = "submit" value = "SUBMIT" onclick = "anncformclear(2, 1)"/>
+                                        <input type = "reset" value = "CLEAR" onclick = "return anncformclear(2, 2)"/>
+                                    </div>
+                                </div>
+                            </form>
+                            <form action = "/events1" enctype="multipart/form-data" method = "POST">
+                                <div class = "crosscont">
+                                    <h3>Events Section 1</h3>
+                                    <div class = "flexcont">
+                                        <div>
+                                            <img class = "img" id = "eventimg1" alt="Add Image" src="images/admannc-icon1.png"/>
+                                            <input type = "file" accept = "image/*" required = "true" id = "annceventimg1" name = "annceventimg1"/>
+                                            <label for = "annceventimg1">
+                                                <img class = "inputicon" alt = "Upload Icon" src = "images/uploadimage.png"/>
+                                                Upload a Photo
+                                            </label>
+                                        </div>
+                                        <div class = "posttextcont">
+                                            <p>Header</p>
+                                            <textarea class = "headertxt" required = "true" id = "annceventheader1" name = "annceventheader1" placeholder = "Write the header of the news post..."></textarea>
+                                            <p>Body</p>
+                                            <textarea class = "bodytxt" required = "true" id = "annceventbody1" name = "annceventbody1" placeholder = "Write the body of the news post..."></textarea>
+                                            <p>Link</p>
+                                            <textarea class = "linktxt" id = "annceventlink1" name = "annceventlink1" placeholder = "Input the link for the news post..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class = "btncont">
+                                        <input type = "submit" value = "SUBMIT" onclick = "anncformclear(3, 1)"/>
+                                        <input type = "reset" value = "CLEAR" onclick = "return anncformclear(3, 2)"/>
+                                    </div>
+                                </div>
+                            </form>
+                            <form action = "/events2" enctype="multipart/form-data" method = "POST">
+                                <div class = "crosscont">
+                                    <h3>Events Section 2</h3>
+                                    <div class = "flexcont">
+                                        <div>
+                                            <img class = "img" id = "eventimg2" alt="Add Image" src="images/admannc-icon1.png"/>
+                                            <input type = "file" accept = "image/*" required = "true" id = "annceventimg2" name = "annceventimg2"/>
+                                            <label for = "annceventimg2">
+                                                <img class = "inputicon" alt = "Upload Icon" src = "images/uploadimage.png"/>
+                                                Upload a Photo
+                                            </label>
+                                        </div>
+                                        <div class = "posttextcont">
+                                            <p>Header</p>
+                                            <textarea class = "headertxt" required = "true" id = "annceventheader2" name = "annceventheader2" placeholder = "Write the header of the news post..."></textarea>
+                                            <p>Body</p>
+                                            <textarea class = "bodytxt" required = "true" id = "annceventbody2" name = "annceventbody2" placeholder = "Write the body of the news post..."></textarea>
+                                            <p>Link</p>
+                                            <textarea class = "linktxt" id = "annceventlink2" name = "annceventlink2" placeholder = "Input the link for the news post..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class = "btncont">
+                                        <input type = "submit" value = "SUBMIT" onclick = "anncformclear(4, 1)"/>
+                                        <input type = "reset" value = "CLEAR" onclick = "return anncformclear(4, 2)"/>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class = "footer"></div>
+                        </div>
+                        <div class = "lengthwise">
+                            <div class = "lengthcont">
+                                <h3>Flash News</h3>
+                                <form action = "/flash1" enctype="multipart/form-data" method = "POST">
+                                    <div>
+                                        <img class = "img" id = "flashimg1" alt="Add Image" src="images/admannc-icon1.png"/>
+                                        <div class = "editcont">
+                                            <p class = "label">Flash News Section 1</p>
+                                            <input type = "file" accept = "image/*" required = "true" id = "anncflashimg1" name = "anncflashimg1"/>
+                                            <label for = "anncflashimg1">
+                                                <img class = "inputicon" alt = "Upload Icon" src = "images/uploadimage.png"/>
+                                                Upload a Photo
+                                            </label>
+                                            <input type = "submit" value = "SUBMIT" onclick = "anncformclear(5, 1)"/>
+                                            <input type = "reset" value = "CLEAR" onclick = "return anncformclear(5, 2)"/>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form action = "/flash2" enctype="multipart/form-data" method = "POST">
+                                    <div>
+                                        <img class = "img" id = "flashimg2" alt="Add Image" src="images/admannc-icon1.png"/>
+                                        <div class = "editcont">
+                                            <p class = "label">Flash News Section 2</p>
+                                            <input type = "file" accept = "image/*" required = "true" id = "anncflashimg2" name = "anncflashimg2"/>
+                                            <label for = "anncflashimg2">
+                                                <img class = "inputicon" alt = "Upload Icon" src = "images/uploadimage.png"/>
+                                                Upload a Photo
+                                            </label>
+                                            <input type = "submit" value = "SUBMIT" onclick = "anncformclear(6, 1)"/>
+                                            <input type = "reset" value = "CLEAR" onclick = "return anncformclear(6, 2)"/>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class = "footer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "sidecon">
+                <div class = "contactbox3">
+                    <p onclick = "window.location.href = '/chmhome'">HOME</p>
+                </div>
+                <div class = "contactbox4">
+                    <p onclick = "window.location.href = '/chmannouncements'">ANNOUNCEMENTS</p>
+                </div>
+                <div class = "contactbox4">
+                    <p onclick = "window.location.href = '/chmcertificates'">CERTIFICATES</p>
+                </div>
+                <div class = "contactbox4">
+                    <p onclick = "window.location.href = '/chmaddadmin'">ADD ADMIN</p>
+                </div>
+                <div class = "contactbox4">
+                    <p onclick = "window.location.href = '/login'">LOG OUT</p>
+                </div>
+                <div class = "motto" style = "margin-top: 6vh;">
+                    <h3>“ Hindi mag lilingkod ng pangsarili lang, kundi maglilingkod ng pangkalahatan!”</h3>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/previewimage.js"></script>
+        <script src="scripts/validateform.js"></script>
+        <script src="scripts/time.js"></script>
+    </body>
+</html>

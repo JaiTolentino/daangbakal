@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Anek Gujarati' rel='stylesheet'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="main" onload="initClock()">
+        <div class="headcon">
+            <div class="logocon">
+                <img alt="brgy logo" src="images/logo.png"/>
+            </div>
+            <h1 class="brgy">Information System of Barangay Daang Bakal</h1>
+            <div class="toptime">
+                <span id = "hour">00</span> :
+                <span id = "minute">00</span>
+                <span id = "period">AM</span>
+            </div>
+        </div>
+        <div class="headcon">
+            <ul>
+                <li onclick="window.location.href='/headhome'">Home</li>
+                <li onclick="window.location.href='/headpersonalinfo'">Residents Information</li>
+                <li onclick="window.location.href='/headannouncements'">Announcement</li>
+                <li onclick="window.location.href='/headbarangayofficials'">Barangay Officials</li>
+                <li onclick="window.location.href='/headcertificates'">Certificates</li>
+                <li onclick="window.location.href='/login'">LOGOUT</li>
+            </ul>
+            <div class="bottomtime">
+                <span id = "day">Day</span>,
+                <span id = "month">Month</span>
+                <span id = "date">00</span>
+                <span id = "year">Year</span>
+            </div>
+        </div>
+        <div class = "flex-container">
+            <div class = "home">
+                <div class = "bodycon">
+                    <div class = "topbody">
+                        <h1 class = "welcometxt">WELCOME TO<br>BARANGAY DAANG BAKAL</h1>
+                        <img class = "img" alt="Barangay Pic 1" src="images/backgroud1.png"/>
+                    </div>
+                    <div class = "bottombody">
+                        <h1 class = "officialtxt">BARANGAY DAANG BAKAL<br>OFFICIALS</h1>
+                        <button class = "viewbtn" onclick="window.location.href='/headbarangayofficials'">VIEW BARANGAY OFFICIALS</button>
+                        <img class = "img" alt="Barangay Pic 2" src="images/background2.png"/>
+                    </div>
+                </div>
+            </div>
+            <div class = "sidecon">
+                <h2 class = "contact">CONTACT NUMBERS</h2>
+                <div class = "contactbox">
+                    <h3>PHONE</h3>
+                    <p>85353992 / 84639631</p>
+                </div>
+                <div class = "contactbox">
+                    <h3>POLICE</h3>
+                    <p>85322145</p>
+                </div>
+                <div class = "contactbox">
+                    <h3>FIRE</h3>
+                    <p>85322189 / 85322402</p>
+                </div>
+                <div class = "contactbox">
+                    <h3>HOSPITAL</h3>
+                    <p>85320480</p>
+                </div>
+                <div class = "contactbox">
+                    <h3>DISASTER / RESCUE</h3>
+                    <p>85332225</p>
+                </div>
+                <h2 class = "address">ADDRESS</h2>
+                <div class = "contactbox">
+                    <p>Kalentong Shaw Boulevard,</p>
+                    <p>Daang Bakal, Mandaluyong City</p>
+                </div>
+                <div class = "motto">
+                    <h3>“ Hindi mag lilingkod ng pangsarili lang, kundi maglilingkod ng pangkalahatan!”</h3>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/time.js"></script>
+    </body>
+</html>

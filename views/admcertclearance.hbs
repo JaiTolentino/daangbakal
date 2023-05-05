@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Anek Gujarati' rel='stylesheet'>
+		<meta naame="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body class = "admcertdetails">
+        <div class = "headcon">
+            <img class = "logocon" alt = "Brgy Logo" src = "images/logo.png">
+            <h1 class = "brgy">Information System of Barangay Daang Bakal</h1>
+        </div>
+        <div class = "first">
+            <div class = "second">
+                <div class = "bodycon">
+                    <form method="post" action="/changestatus">
+                        <div class = "certformcont">
+                            <div class = "header">
+                                <p>BARANGAY CLEARANCE APPLICATION</p>
+                            </div>
+                            {{#each data}}
+                                <div class = "rowcont">
+                                    <p class = "labeltxt">REQUESTER USERNAME :</p>
+                                    <p class = "datatxt">{{email}}</p>
+                                </div>
+                                <div class = "rowcont">
+                                    <p class = "labeltxt">REQUESTER FULL NAME :</p>
+                                    <p class = "datatxt">{{fname}} {{lname}}</p>
+                                </div>
+                            
+                            <div class = "rowcont">
+                                <div>
+                                    <div>
+                                        <p class = "labeltxt">REQUESTER VALID ID :</p>
+                                    </div>
+                                    <div class = imagecont>
+                                        <img class = "img" id = "cert1" alt="Add Image" src="uploads/application/{{fname}}{{lname}}-validid-Barangay Clearance.PNG"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "rowcont">
+                                <div>
+                                    <div>
+                                        <p class = "labeltxt">PROOF OF RESIDENCY :</p>
+                                    </div>
+                                    <div class = imagecont>
+                                        <img class = "img" id = "cert2" alt="Add Image" src="uploads/application/{{fname}}{{lname}}-proofofresidency-Barangay Clearance.PNG"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "rowcont">
+                            {{/each}}
+                                <div>
+                                    <div class = "rowcont2">
+                                        {{#each certificate}}
+                                            <p class = "labeltxt">CURRENT STATUS :</p>
+                                            <p class = "datatxt2">{{status}}</p>
+                                        {{/each}}
+                                    </div>
+                                    <div class = "rowcont2">
+                                        <p class = "labeltxt">Change application status to : </p>
+                                        <div class = "datatxt3">
+                                            <input type = "radio" name = "certstatus" required = "true" checked = "true" value = "unverified">
+                                            <label for = "unverified">Unverified</label>
+                                            <input type = "radio" class = "moveright" name = "certstatus" required = "true" value = "processing">
+                                            <label for = "processing">Processing</label>
+                                            <input type = "radio" class = "moveright" name = "certstatus" required = "true" value = "forpickup">
+                                            <label for = "forpickup">For Pickup</label>
+                                            <input type = "radio" class = "moveright" name = "certstatus" required = "true" value = "denied">
+                                            <label for = "denied">Denied</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "rowcont2">
+                                <div class = "btncont">
+                                    <input type = "submit" class = "leftbtn" value = "EDIT"/>
+                                    <input type = "reset" class = "rightbtn" value = "CANCEL" onclick = "history.back()"/>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+	</body>
+</html>

@@ -1,0 +1,3154 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@800&display=swap');
+
+
+
+h1, h2, h3, p {
+    font-family: 'Anek Gujarati';
+}
+
+
+
+.flex-container {
+    display: flex;
+}
+.flex-justify {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.space {
+    white-space: pre;
+}
+
+
+
+.first {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    width: 100vw;
+    background-color: rgba(0, 136, 52, 0.403);
+}
+.second {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    width: 90vw;
+    background-color: rgba(0, 136, 52, 0.403);
+}
+.third {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    width: 81vw;
+    background-color: rgba(0, 136, 52, 0.403);
+}
+.fourth {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    width: 73vw;
+    background-color: rgba(0, 136, 52, 0.403);
+}
+.fifth {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    width: 66vw;
+    background-color: rgba(0, 136, 52, 0.403);
+}
+.sixth {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    width: 60vw;
+    background-color: rgba(0, 136, 52, 0.403);
+}
+
+
+
+.index {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(images/backgroud1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+    .index .bodycon {
+        height: 100vh;
+        width: 60vw;
+        background-color: rgba(0, 136, 52, 0.749);
+    }
+        .index .bodycon .img {
+            margin-top: 4vh;
+            margin-left: 20vw;
+            height: 40vh;
+            width: 20vw;
+        }
+        .index .bodycon .title {
+            text-align: center;
+            margin-top: 4vh;
+            margin-left: 0vw;
+            font-size: 3.5em;
+            font-weight: bold;
+            color: rgba(251, 242, 207, 1);
+        }
+        .index .bodycon .btncont {
+            display: flex;
+            justify-content: center;
+            margin-top: -1vh;
+            height: fit-content;
+            width: 100%;
+        }
+        .index .bodycon .btncont .registerbtn {
+            cursor: pointer;
+            height: 9vh;
+            width: 15vw;
+            border: 0px solid black;
+            border-radius: 50px;
+            font-size: 1.4em;
+            color: green;
+            background-color: white;
+        }
+            .index .bodycon .btncont .registerbtn:hover {
+                transition: 0.2s;
+                color: black;
+                border: 3px solid black;
+                background-color: rgba(251, 242, 207, 1);
+                font-size: 1.7em;
+            }
+        .index .bodycon .btncont .loginbtn {
+            cursor: pointer;
+            margin-left: 5vw;
+            height: 9vh;
+            width: 15vw;
+            border: 0px solid black;
+            border-radius: 50px;
+            font-size: 1.4em;
+            color: green;
+            background-color: white;
+        }
+            .index .bodycon .btncont .loginbtn:hover {
+                transition: 0.2s;
+                color: black;
+                border: 3px solid black;
+                background-color: rgba(251, 242, 207, 1);
+                font-size: 1.7em;
+            }
+
+
+
+.terms {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(images/backgroud1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+    .terms .headcon {
+        display: flex;
+        width: 100vw;
+        height: 5em;
+        background-color: rgba(0, 136, 53);
+    }
+        .terms .headcon .logocon {
+            z-index: 1;
+            margin-left: 1vw;
+            margin-top: 3vh;
+            height: 25vh;
+            width: 25vh;
+        }
+        .terms .headcon .brgy {
+            margin-left: 7.8vw;
+            margin-top: 2vh;
+            font-size: 2.8em;
+            color: rgba(251, 242, 207, 1);
+        }
+    .terms .bodycon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        width: 73vw;
+        background-color: rgba(0, 136, 53);
+    }
+        .terms .bodycon .formcont {
+            height: 100vh;
+            width: 68vw;
+        }
+            .terms .bodycon .formcont .header {
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                height: 10vh;
+                border-bottom: 0.3vw solid rgba(0, 136, 52, 0.403);
+                background-color: white;
+            }
+                .terms .bodycon .formcont .header .headtxt{
+                    margin-left: 2vw;
+                    font-size: 3em;
+                    font-weight: bold;
+                    color: rgba(0, 136, 53);
+                    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.611);
+                }
+            .terms .bodycon .formcont .rulescont {
+                display: flex;
+                justify-content: center;
+                height: 52vh;
+                background-color: white;
+            }
+                .terms .bodycon .formcont .rulescont .textbox {
+                    overflow-y: scroll;
+                    margin-top: 2vh;
+                    height: 44vh;
+                    width: 64vw;
+                    padding: 1vw;
+                    border: 2px solid black;
+                    background-color: rgb(231, 231, 231);
+                }
+                .terms .bodycon .formcont .rulescont .textbox p {
+                    font-size: 1.2em;
+                }
+            .terms .bodycon .formcont .agreecont {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 10vh;
+                background-color: white;
+            }
+                .terms .bodycon .formcont .agreecont input {
+                    height: 8vh;
+                    width: 8vw;
+                }
+                .terms .bodycon .formcont .agreecont p {
+                    font-size: 1.3em;
+                    font-weight: bold;
+                    color: rgba(0, 136, 53);
+                }
+            .terms .bodycon .formcont .buttoncont {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 15vh;
+                background-color: white;
+            }
+                .terms .bodycon .formcont .buttoncont .cancelbtn {
+                    cursor: pointer;
+                    height: 10vh;
+                    width: 18vw;
+                    border-width: 0px;
+                    border-radius: 25px;
+                    font-size: 1.8em;
+                    color: white;
+                    background-color: rgba(0, 136, 53);
+                }
+                    .terms .bodycon .formcont .buttoncont .cancelbtn:hover {
+                        transition: 0.2s;
+                        border: 4px solid black;
+                        font-size: 2em;
+                        height: 12vh;
+                        width: 20vw;
+                    }
+                .terms .bodycon .formcont .buttoncont .nextbtn {
+                    display: none;
+                    cursor: pointer;
+                    margin-left: 8vw;
+                    height: 10vh;
+                    width: 18vw;
+                    border-width: 0px;
+                    border-radius: 25px;
+                    font-size: 1.8em;
+                    color: white;
+                    background-color: rgba(0, 136, 53);
+                }
+                    .terms .bodycon .formcont .buttoncont .nextbtn:hover {
+                        transition: 0.2s;
+                        border: 4px solid black;
+                        font-size: 2em;
+                        height: 12vh;
+                        width: 20vw;
+                    }
+        .terms .bodycon .footer {
+            height: 13vh;
+            background-color: white;
+        }
+
+
+
+.register {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-image: url(images/backgroud1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+    .register .headcon {
+        display: flex;
+        width: 100vw;
+        height: 5em;
+        background-color: rgba(0, 136, 53);
+    }
+        .register .headcon .logocon {
+            z-index: 1;
+            margin-left: 1vw;
+            margin-top: 3vh;
+            height: 25vh;
+            width: 25vh;
+        }
+        .register .headcon .brgy {
+            margin-left: 7.8vw;
+            margin-top: 2vh;
+            font-size: 2.8em;
+            color: rgba(251, 242, 207, 1);
+        }
+    .register .bodycon {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        width: 60vw;
+        background-color: rgba(0, 136, 52, 0.403);
+    }
+        .register .bodycon .formcont {
+            height: fit-content;
+            width: 50vw;
+        }
+            .register .bodycon .formcont .header {
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                height: 10vh;
+                border-bottom: 0.3vw solid rgba(0, 136, 52, 0.403);
+                background-color: white;
+            }
+                .register .bodycon .formcont .header .headtxt{
+                    margin-left: 2vw;
+                    font-size: 3em;
+                    font-weight: bold;
+                    color: rgba(0, 136, 53);
+                    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.611);
+                }
+            .register .bodycon .formcont .rowcont {
+                display: flex;
+                align-items: center;
+                height: 15vh;
+                color: rgba(0, 136, 53);
+                background-color: white;
+            }
+                .register .bodycon .formcont .rowcont p,
+                .register .bodycon .formcont .passwordcont p {
+                    margin-bottom: 2vh;
+                    font-size: 1.5em;
+                    margin-left: 3vw;
+                }
+                .register .bodycon .formcont .rowcont input,
+                .register .bodycon .formcont .rowcont select,
+                .register .bodycon .formcont .passwordcont input {
+                    width: 20vw;
+                    padding: 2vh;
+                    margin-top: -5vh;
+                    margin-left: 2vw;
+                    font-size: 1.3em;
+                    border: none;
+                    border-radius: 20px;
+                    background-color: #f2f2f2;
+                    box-sizing: border-box;
+                }
+                    .register .bodycon .formcont .rowcont .lname p {
+                        margin-left: 7vw;
+                    }
+                    .register .bodycon .formcont .rowcont .lname input {
+                        margin-left: 6vw;
+                    }
+                    .register .bodycon .formcont .rowcont .email input {
+                        width: 30vw;
+                    }
+                    .register .bodycon .formcont .rowcont .contact p {
+                        margin-left: 4vw;
+                    }
+                    .register .bodycon .formcont .rowcont .contact input {
+                        margin-left: 4vw;
+                        width: 12vw;
+                    }
+                    .register .bodycon .formcont .rowcont .sex select {
+                        cursor: pointer;
+                        width: 14vw;
+                    }
+                    .register .bodycon .formcont .rowcont .marital select {
+                        cursor: pointer;
+                        width: 14vw;
+                    }
+                    .register .bodycon .formcont .rowcont .bday input {
+                        cursor: text;
+                        width: 14vw;
+                    }
+                    .register .bodycon .formcont .rowcont .address input {
+                        width: 46vw;
+                    }
+            .register .bodycon .formcont .passwordcont {
+                display: flex;
+                height: 35vh;
+                color: rgba(0, 136, 53);
+                background-color: white;
+            }
+                .register .bodycon .formcont .passwordcont .input {
+                    height: 30vh;
+                    width: 30vw;
+                }
+                    .register .bodycon .formcont .passwordcont .input .pass p {
+                        margin-top: 6vh;
+                    }
+                    .register .bodycon .formcont .passwordcont .input .pass input {
+                        width: 28vw;
+                    }
+                    .register .bodycon .formcont .passwordcont .input .confirmpass input {
+                        width: 28vw;
+                    }
+                .register .bodycon .formcont .passwordcont .instruction {
+                    margin-top: 2vh;
+                    margin-left: 2vh;
+                    padding-left: 0.5vw;
+                    padding-right: 0.5vw;
+                    height: 37vh;
+                    width: 16vw;
+                    border: 4px solid black;
+                    border-radius: 50px;
+                    background-color: green;
+                }
+                .register .bodycon .formcont .passwordcont .instruction p{
+                    text-align: center;
+                    margin-top: 3vh;
+                    font-size: 1em;
+                    font-weight: bold;
+                    margin-left: 0vw;
+                    color: white;
+                }         
+            .register .bodycon .formcont .btncont {    
+                display: flex;
+                justify-content: center;
+                height: 15vh;
+                background-color: white;
+            }
+            .register .bodycon .formcont .btncont .btn1,
+            .register .bodycon .formcont .btncont .btn2 {
+                cursor: pointer;
+                margin-top: 10vh;
+                height: 10vh;
+                width: 18vw;
+                border-width: 0px;
+                border-radius: 25px;
+                font-size: 1.8em;
+                color: white;
+                background-color: rgba(0, 136, 53);
+            }
+            .register .bodycon .formcont .btncont .btn2 {
+                margin-left: 2vw;
+            }
+            .register .bodycon .formcont .btncont .btn1:hover {
+                transition: 0.2s;
+                border: 4px solid black;
+                font-size: 2em;
+                height: 12vh;
+                width: 20vw;
+            }
+            .register .bodycon .formcont .btncont .btn2:hover {
+                transition: 0.2s;
+                border: 4px solid black;
+                font-size: 2em;
+                height: 12vh;
+                width: 20vw;
+            }
+        .register .bodycon .footer {
+            height: 13vh;
+            background-color: white;
+        }
+
+
+
+.successregister {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(images/backgroud1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+    .successregister .headcon {
+        display: flex;
+        width: 100vw;
+        height: 5em;
+        background-color: rgba(0, 136, 53);
+    }
+        .successregister .headcon .logocon {
+            z-index: 1;
+            margin-left: 1vw;
+            margin-top: 3vh;
+            height: 25vh;
+            width: 25vh;
+        }
+        .successregister .headcon .brgy {
+            margin-left: 7.8vw;
+            margin-top: 2vh;
+            font-size: 2.8em;
+            color: rgba(251, 242, 207, 1);
+        }
+    .successregister .bodycon {
+        height: fit-content;
+        width: 50vw;
+        background-color: white;
+    }
+        .successregister .bodycon .img {
+            margin-top: 5vh;
+            margin-left: 18.5vw;
+            height: 24vh;
+            width: 14vw;
+        }
+        .successregister .bodycon .title {
+            text-align: center;
+            margin-top: 5vh;
+            margin-left: 0vw;
+            font-size: 2.5em;
+            color: rgba(0, 136, 25, 1);
+        }
+        .successregister .bodycon .info {
+            margin-top: -1vh;
+            margin-left: 1vw;
+            font-size: 1.2em;
+            text-align: center;
+            color: rgba(0, 136, 25, 1);
+        }
+        .successregister .bodycon .btncont {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 7vh;
+            height: fit-content;
+        }
+            .successregister .bodycon .btncont .loginbtn {
+                cursor: pointer;
+                height: 9vh;
+                width: 16vw;
+                font-size: 1.2em;
+                border-radius: 50px;
+                border: 0px solid black;
+                color: white;
+                background-color: rgba(0, 136, 25, 1);
+            }
+                .successregister .bodycon .btncont .loginbtn:hover {
+                    transition: 0.3s;
+                    font-size: 1.4em;
+                    height: 10vh;
+                    width: 18vw;
+                    border: 3px solid black;
+                }
+            .successregister .bodycon .btncont .registerbtn {
+                cursor: pointer;
+                margin-left: 3vw;
+                height: 9vh;
+                width: 16vw;
+                font-size: 1.2em;
+                border-radius: 50px;
+                border: 0px solid black;
+                color: white;
+                background-color: rgba(0, 136, 25, 1);
+            }
+                .successregister .bodycon .btncont .registerbtn:hover {
+                    transition: 0.3s;
+                    font-size: 1.4em;
+                    height: 10vh;
+                    width: 18vw;
+                    border: 3px solid black;
+                }
+        .successregister .bodycon .footer {
+            height: 18vh;
+            background-color: white;
+        }
+
+
+
+.password {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("images/backgroud1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    .password .headcon {
+        height: 8vh;
+        width: 100vw;
+        background-color: rgba(0, 136, 53);
+    }
+    .password .bodycon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15vw;
+        height: 100vh;
+        width: 70vw;
+        background-color: rgba(0, 136, 52, 0.403);
+    }
+
+
+
+.forgotpass {
+    position: relative;
+    margin-top: -8vh;
+    height: 75vh;
+    width: 50vw;
+    background-color: white;
+}
+    .forgotpass .img {
+        margin-top: 2vh;
+        margin-left: 20vw;
+        height: 24vh;
+        width: 12vw;
+    }
+    .forgotpass .title {
+        margin-top: 3vh;
+        margin-left: 8vw;
+        font-size: 1.6em;
+        color: rgba(0, 136, 25, 1);
+    }
+    .forgotpass .info {
+        margin-top: 0vh;
+        margin-left: 6vw;
+        font-size: 1em;
+        color: rgba(0, 136, 25, 1);
+    }
+    .forgotpass .input {
+        display: flex;
+    }
+        .forgotpass .input .label {
+            margin-left: 6vw;
+            font-size: 1.3em;
+            color: rgba(0, 136, 25, 1);;
+        }
+        .forgotpass .input input[type = text] {
+            width: 28vw;
+            padding: 3vh;
+            margin-left: 1vw;
+            border: 3px solid #f2f2f2;
+            border-radius: 14px;
+            font-size: 1.2em;
+            background-color: #f2f2f2;
+        }
+            .forgotpass .input input::-webkit-outer-spin-button,
+            .forgotpass .input input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+            .forgotpass .input input[type = text]:hover {
+                transition: 0.2s;
+                border: 3px solid rgba(0, 136, 25, 1);
+            }
+    .forgotpass .btn {
+        cursor: pointer;
+        margin-top: 3vh;
+        margin-left: 18vw;
+        height: 8vh;
+        width: 15vw;
+        font-size: 1.2em;
+        border-radius: 50px;
+        color: white;
+        background-color: rgba(0, 136, 25, 1);
+        }
+        .forgotpass .btn:hover {
+            transition: 0.2s;
+            margin-left: 17vw;
+            height: 10vh;
+            width: 17vw;
+        }
+    .forgotpass .return {
+        position: absolute;
+        cursor: pointer;
+        margin-top: 10vh;
+        margin-left: 1vw;
+        height: 8vh;
+        width: 4vw;
+        }
+        .forgotpass .return:hover {
+            transition: 0.2s;
+            margin-top: 8vh;
+            margin-left: 1vw;
+            height: 10vh;
+            width: 5vw;
+        }
+
+
+
+.security {
+    position: relative;
+    margin-top: -8vh;
+    height: 75vh;
+    width: 50vw;
+    background-color: white;
+}
+    .security .img {
+        margin-top: 2vh;
+        margin-left: 20vw;
+        height: 24vh;
+        width: 12vw;
+    }
+    .security .title {
+        margin-top: 3vh;
+        margin-left: 8vw;
+        font-size: 1.6em;
+        color: rgba(0, 136, 25, 1);
+    }
+    .security .title2 {
+        margin-top: -1vh;
+        margin-left: 6vw;
+        font-size: 1.3em;
+        color: rgba(0, 136, 25, 1);
+    }
+    .security .info {
+        margin-top: -3vh;
+        margin-left: 6vw;
+        font-size: 1em;
+        color: rgba(0, 136, 25, 1);
+    }
+    .security .input {
+        display: flex;
+        margin-top: -1vh;
+    }
+        .security .input input[type = number] {
+            height: 3vh;
+            width: 23vw;
+            padding: 3vh;
+            margin-left: 6vw;
+            border: 3px solid #f2f2f2;
+            border-radius: 14px;
+            font-size: 1.2em;
+            background-color: #f2f2f2;
+        }
+            .security .input input::-webkit-outer-spin-button,
+            .security .input input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+            .security .input input[type = number]:hover {
+                transition: 0.2s;
+                border: 3px solid rgba(0, 136, 25, 1);
+            }
+        .security .input .code {
+            margin-left: 1vw;
+            font-size: 1.3em;
+            color: rgba(0, 136, 25, 1);
+        }
+            .security .input .code .label {
+                margin-top: 0vh;
+            }
+            .security .input .code .num {
+                margin-top: -2vh;
+            }
+    .security .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0vh;
+    }
+        .security .buttons .cancel {
+            cursor: pointer;
+            height: 8vh;
+            width: 15vw;
+            font-size: 1.2em;
+            border-radius: 50px;
+            color: white;
+            background-color: rgba(0, 136, 25, 1);
+            }
+            .security .buttons .cancel:hover {
+                transition: 0.2s;
+                margin-left: -1vw;
+                width: 20vw;
+            }
+        .security .buttons .continue {
+            cursor: pointer;
+            margin-left: 2vw;
+            height: 8vh;
+            width: 15vw;
+            font-size: 1.2em;
+            border-radius: 50px;
+            color: white;
+            background-color: rgba(0, 136, 25, 1);
+            }
+            .security .buttons .continue:hover {
+                transition: 0.2s;
+                margin-left: 1vw;
+                width: 20vw;
+            }
+    .security .nocode {
+        cursor: pointer;
+        margin-top: 3vh;
+        margin-left: 2vh;
+        font-size: 1.1em;
+        width: 9vw;
+        color: rgba(0, 136, 25, 1);
+    }
+
+
+
+.changepass {
+    position: relative;
+    margin-top: -8vh;
+    height: 92vh;
+    width: 50vw;
+    background-color: white;
+}
+    .changepass .img {
+        margin-top: 2vh;
+        margin-left: 20vw;
+        height: 24vh;
+        width: 12vw;
+    }
+    .changepass .title {
+        margin-top: 3vh;
+        margin-left: 8vw;
+        font-size: 1.6em;
+        color: rgba(0, 136, 25, 1);
+    }
+    .changepass .title2 {
+        margin-top: -1vh;
+        margin-left: 6vw;
+        font-size: 1.3em;
+        color: rgba(0, 136, 25, 1);
+    }
+    .changepass .info {
+        margin-top: -3vh;
+        margin-left: 6vw;
+        font-size: 1em;
+        color: rgba(0, 136, 25, 1);
+    }
+    .changepass .input {
+        display: flex;
+        margin-top: 0vh;
+    }
+        .changepass .input input[type = password] {
+            height: 5.5vh;
+            width: 23vw;
+            padding: 3vh;
+            margin-left: 6vw;
+            border: 3px solid #f2f2f2;
+            border-radius: 14px;
+            font-size: 1.2em;
+            background-color: #f2f2f2;
+        }
+            .changepass .input input[type = password]:hover {
+                transition: 0.2s;
+                border: 3px solid rgba(0, 136, 25, 1);
+            }
+        .changepass .input .code {
+            position: absolute;
+            margin-top: 5vh;
+            margin-left: 34vw;
+            font-size: 1.3em;
+            color: rgba(0, 136, 25, 1);
+        }
+            .changepass .input .code .label {
+                margin-top: 0vh;
+            }
+            .changepass .input .code .num {
+                margin-top: -3.5vh;
+            }
+    .changepass .reinput {
+        display: flex;
+        margin-top: 2vh;
+    }
+        .changepass .reinput input[type = password] {
+            height: 5.5vh;
+            width: 23vw;
+            padding: 3vh;
+            margin-left: 6vw;
+            border: 3px solid #f2f2f2;
+            border-radius: 14px;
+            font-size: 1.2em;
+            background-color: #f2f2f2;
+        }
+            .changepass .reinput input[type = password]:hover {
+                transition: 0.2s;
+                border: 3px solid rgba(0, 136, 25, 1);
+            }
+    .changepass .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3vh;
+    }
+        .changepass .buttons .cancel {
+            cursor: pointer;
+            margin-left: 2vw;
+            height: 8vh;
+            width: 15vw;
+            font-size: 1.2em;
+            border-radius: 50px;
+            color: white;
+            background-color: rgba(0, 136, 25, 1);
+            }
+            .changepass .buttons .cancel:hover {
+                transition: 0.2s;
+                width: 18vw;
+            }
+        .changepass .buttons .continue {
+            cursor: pointer;
+            height: 8vh;
+            width: 15vw;
+            font-size: 1.2em;
+            border-radius: 50px;
+            color: white;
+            background-color: rgba(0, 136, 25, 1);
+            }
+            .changepass .buttons .continue:hover {
+                transition: 0.2s;
+                width: 18vw;
+            }
+
+
+
+.successchange {
+    position: relative;
+    margin-top: -8vh;
+    height: 75vh;
+    width: 50vw;
+    background-color: white;
+}
+    .successchange .img {
+        margin-top: 8vh;
+        margin-left: 18.5vw;
+        height: 24vh;
+        width: 14vw;
+    }
+    .successchange .title {
+        margin-top: 3vh;
+        margin-left: 12vw;
+        font-size: 2.5em;
+        color: rgba(0, 136, 25, 1);
+    }
+    .successchange .info {
+        margin-top: -3vh;
+        margin-left: 1vw;
+        font-size: 1.2em;
+        text-align: center;
+        color: rgba(0, 136, 25, 1);
+    }
+    .successchange .btn {
+        cursor: pointer;
+        margin-top: 1vh;
+        margin-left: 15.5vw;
+        height: 8vh;
+        width: 20vw;
+        font-size: 1.2em;
+        border-radius: 50px;
+        color: white;
+        background-color: rgba(0, 136, 25, 1);
+        }
+        .successchange .btn:hover {
+            transition: 0.2s;
+            font-size: 1.4em;
+            margin-top: 0vh;
+            margin-left: 13.5vw;
+            height: 10vh;
+            width: 24vw;
+        }
+
+
+
+.login {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 136, 53);
+}
+    .login .headcon {
+        display: flex;
+        width: 100vw;
+        height: 5em;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+        .login .headcon h1 {
+            font-size: 3vw;
+            color: rgba(16, 14, 172, 1)
+        }
+        .login .flex-container .logocon {
+            display: flex;
+            margin-left: 9vw;
+            margin-top: 10vh;
+            height: 70vh;
+            width: 90vw;
+        }
+        .login .flex-container .interfacecon {
+            position: relative;
+            left: 2vw;
+            top: 2vh;
+            margin-top: 10vh;
+            margin-right:15vw;
+            border-radius: 25px;
+            width: 35vw;
+            background-color: white;
+        }
+            .login .interfacecon .emailtxt input[type="email"], 
+            .login .interfacecon .passwordtxt input[type="password"] {
+                width: 33vw;
+                padding: 4vh;
+                margin-top: 10vh;
+                margin-left: 1vw;
+                border: none;
+                border-radius: 14px;
+                background-color: #f2f2f2;
+                box-sizing: border-box;
+            }
+            /* .login .interfacecon .emailtxt input::-webkit-outer-spin-button,
+            .login .interfacecon .emailtxt input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            } */
+            .login .flex-container .interfacecon h2 {
+                position: absolute;
+                margin-top: 4.5vh;
+                margin-left: 2vw;
+                font-size: 2vw;
+                color:rgba(0, 136, 53, 0.5);
+            }
+            .login .flex-container .interfacecon .loginbtn {
+                cursor: pointer;
+                margin-top: 9vh;
+                margin-left: 1.3vw;
+                height: 9vh;
+                width: 33vw;
+                border-width: 0px;
+                border-radius: 14px;
+                background-color: rgba(0, 136, 53, 0.5);
+                color: white;
+            }
+                .login .flex-container .interfacecon .loginbtn:hover {
+                    transition: 0.3s;
+                    background-color: rgba(0, 136, 25, 1);
+                }
+            .login .flex-container .interfacecon .forgotpswrd {
+                cursor: pointer;
+                padding-top: 1.5vh;
+                padding-bottom: 4vh;
+                text-align: center;
+                color:blue;
+            }
+
+
+
+.main {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    background-color: rgba(0, 136, 53);
+}
+    .main .headcon {
+        display: flex;
+        width: 100vw;
+        height: 4.5em;
+        background-color: transparent;
+    }
+        .main .headcon .logocon {
+            z-index: 1;
+            margin-left: 1vw;
+            margin-top: 3vh;
+            height: 25vh;
+            width: 25vh;
+        }
+        .main .headcon .brgy {
+            margin-left: 3.5vw;
+            margin-top: 3vh;
+            font-size: 2.8em;
+            color: rgba(251, 242, 207, 1);
+        }
+        .main .headcon ul {
+            display:flex;
+            margin-top: 3vh;
+            margin-left: 13vw;
+            /* background-color: orange; */
+        }
+            .main .headcon ul li {
+                cursor: pointer;
+                list-style: none;
+                margin-left: 1.5vw;
+                font-size: 1.5vw;
+                color: white;
+                transition: 0.3s ease-in-out;
+            }
+        .main .headcon ul li:hover {
+            text-decoration: underline;
+            color: rgba(251, 242, 207, 1);
+        }
+        .main .headcon .admintitle {
+            text-align: right;
+            width: 76vw;
+            background-color: rgba(255, 255, 255, 0.175);
+        }
+            .main .headcon .admintitle p {
+                margin-top: 0vh;
+                margin-right: 2vw;
+                font-size: 3.5em;
+                color:rgba(251, 242, 207, 1);
+                text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.611);
+            }
+        .main .headcon .toptime {
+            margin-left: 3vw;
+            margin-top: 3vh;
+            font-size: 3.8vw;
+            width: 20vw;
+            font-weight: bold;
+            -webkit-text-stroke-width: 3px;
+            color: rgba(251, 242, 207, 1);
+        }
+        .main .headcon .bottomtime {
+            margin-left: 3vw;
+            margin-top: 4vh;
+            font-size: 1em;
+            letter-spacing: 6px;
+            color: white;
+            /* background-color: purple; */
+        }
+        .main .headcon .adminbottomtime {
+            margin-left: 4.5vw;
+            margin-top: 4vh;
+            font-size: 1vw;
+            letter-spacing: 6px;
+            color: white;
+        }
+    .main .sidecon {
+        width: 23vw;
+        height: 100vh;
+        border-radius: 8px;
+        color: white;
+        background-color: white;
+    }
+        .main .sidecon .contact {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top:3vh;
+            margin-left: 1.5vw;
+            font-size: 1.3em;
+            height:5vh;
+            width:20vw;
+            border-radius: 14px;
+            color: rgba(251, 242, 207, 1);
+            background-color: rgba(0, 136, 25, 1);
+        }
+        .main .sidecon .address {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top:4vh;
+            margin-left: 1.5vw;
+            font-size: 1.3em;
+            height:5vh;
+            width:20vw;
+            border-radius: 14px;
+            color: rgba(251, 242, 207, 1);
+            background-color: rgba(0, 136, 25, 1);
+        }
+        .main .sidecon .motto {
+            text-align: center;
+            margin-top:3.7vh;
+            margin-left: 1vw;
+            margin-right: 1vw;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: rgba(251, 242, 207, 1);
+            color: rgba(0, 136, 25, 1);
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.611);
+        }
+        .main .sidecon .contactbox {
+            margin-top: -2vh;
+            margin-left: 1.5vw;
+            height:7vh;
+            width:20vw;
+            border-radius: 14px;
+            background-color: rgba(0, 136, 25, 1);
+        }
+        .main .sidecon .contactbox1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 6vh;
+            margin-left: 1.5vw;
+            height:8vh;
+            width:20vw;
+            border-radius: 14px;
+            background-color: rgba(0, 136, 25, 1);
+        }
+        .main .sidecon .contactbox2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 4vh;
+            margin-left: 1.5vw;
+            height:8vh;
+            width:20vw;
+            border-radius: 14px;
+            background-color: rgba(0, 136, 25, 1);
+        }
+        .main .sidecon .contactbox3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 4vh;
+            margin-left: 1.5vw;
+            height:8vh;
+            width:20vw;
+            border-radius: 14px;
+            background-color: rgba(0, 136, 25, 1);
+        }
+        .main .sidecon .contactbox4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2vh;
+            margin-left: 1.5vw;
+            height:8vh;
+            width:20vw;
+            border-radius: 14px;
+            background-color: rgba(0, 136, 25, 1);
+        }
+            .main .sidecon .contactbox1:hover > p,
+            .main .sidecon .contactbox2:hover > p,
+            .main .sidecon .contactbox3:hover > p,
+            .main .sidecon .contactbox4:hover > p {
+                cursor: pointer;
+                transition: 0.3s;
+                font-size: 1.6vw;
+                letter-spacing: 2px;
+                border: 4px solid white;
+            }
+            .main .sidecon .contactbox h3,
+            .main .sidecon .contactbox p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: -2vh;
+            }
+            .main .sidecon .contactbox h3 {
+                color: rgba(251, 242, 207, 1);
+            }
+            .main .sidecon .contactbox1 p,
+            .main .sidecon .contactbox2 p,
+            .main .sidecon .contactbox3 p,
+            .main .sidecon .contactbox4 p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                height: 6vh;
+                width: 95%;
+                font-size: 1.2em;
+                font-weight: bold;
+                border-radius: 11px;
+                color: rgba(251, 242, 207, 1);
+                border: 0px solid white;
+            }
+    
+
+
+.home {
+    overflow: hidden;
+}
+    .home .bodycon {
+        margin-right: 1vw;
+        width: 76vw;
+        height: 100vh;
+        background-color: white;
+    }
+        .home .bodycon .topbody{
+            position:relative;
+            height: 40vh;
+        }
+            .home .bodycon .topbody .welcometxt {
+                position:absolute;
+                text-align: center;
+                margin-top: 8vh;
+                margin-left: 16vw;
+                font-size: 4vw;
+                color:rgba(251, 242, 207, 1);
+                text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.611);
+            }
+        .home .bodycon .bottombody {
+            position:relative;
+            height: 40vh;
+        }
+            .home .bodycon .bottombody .officialtxt {
+                position:absolute;
+                text-align: center;
+                margin-top: 8vh;
+                margin-left: 36vw;
+                font-size: 2.5vw;
+                color:rgba(251, 242, 207, 1);
+                text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.611);
+            }
+            .home .bodycon .bottombody .viewbtn {
+                position:absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 26vh;
+                margin-left: 38.3vw;
+                width: 25vw;
+                height: 8vh;
+                border-radius: 20px;
+                background-color: white;
+                opacity: 0.8;
+                border-color: rgba(0, 136, 25, 1);
+                transition: 0.2s ease-in-out;
+            }
+                .home .bodycon .bottombody .viewbtn:hover {
+                    opacity: 1;
+                    background-color: rgba(0, 136, 25, 1);
+                    color: white;
+                }
+        .home .bodycon .img {
+            width:76vw;
+            height:40vh;
+        }
+
+
+
+.cert {
+    min-height: fit-content;
+}
+    .cert .bodycon {
+        margin-right: 1vw;
+        overflow: auto;
+        width: 76vw;
+        height:100vh;
+        background-color: white;
+    }
+        .cert .bodycon .header {
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            height: 10vh;
+            color: rgba(251, 242, 207, 1);
+            border-bottom: 0.3vw solid rgba(0, 136, 25, 1);
+        }
+            .cert .bodycon .header .headtxt{
+                margin-right: 3vw;
+                font-size: 4em;
+                font-weight: bold;
+                color: rgba(251, 242, 207, 1);
+                text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.611);
+            }
+        .cert .bodycon .content {
+            display: flex;
+            align-items: center;
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+            margin-left: 2vw;
+            width: 72vw;
+            height: fit-content;
+            background-color: rgba(0, 136, 25, 0.466);
+        }
+            .cert .bodycon .content:hover {
+                transition: 0.5s;
+                background-color: rgba(0, 136, 25, 1);
+            }
+            .cert .bodycon .content:hover > .txt .title {
+                transition: 0.5s;
+                border-top: 2px solid black;
+                border-left: 2px solid black;
+                border-right: 2px solid black;
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+                font-size: 2.5em;
+                background-color: white;
+            }
+            .cert .bodycon .content .img {
+                margin-left: 2vw;
+                height: 30vh;
+                width: 15vw;
+            }
+            .cert .bodycon .content .txt {
+                margin-left: 1vw;
+                height: 60vh;
+                width: 45vw;
+                border-radius: 50px;
+            }
+                .cert .bodycon .content .txt .title {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 0vh;
+                    padding-top: 1vw;
+                    padding-left: 1.5vw;
+                    height: 10vh;
+                    font-size: 3em;
+                    font-weight: bold;
+                    color: rgba(251, 242, 207, 1);
+                    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.611);
+                    border-top: 2px solid transparent;
+                    border-left: 2px solid transparent;
+                    border-right: 2px solid transparent;
+                    background-color: rgb(136, 199, 148);
+                }
+                .cert .bodycon .content .txt .desc1 {
+                    margin-top: -6.5vh;
+                    padding: 1.5vw;
+                    padding-bottom: 0vw;
+                    height: 44vh;
+                    border-bottom-left-radius: 50px;
+                    border-bottom-right-radius: 50px;
+                    border: 2px solid black;
+                    background-color: white;
+                }
+                .cert .bodycon .content .txt .desc2 {
+                    margin-top: -6.6vh;
+                    padding: 1.5vw;
+                    padding-bottom: 0vw;
+                    height: 44vh;
+                    border-bottom-left-radius: 50px;
+                    border-bottom-right-radius: 50px;
+                    border: 2px solid black;
+                    background-color: white;
+                }
+                    .cert .bodycon .content .txt .reqstxt,
+                    .cert .bodycon .content .txt .reqstxt1 {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: left;
+                        margin-top: -3vh;
+                        height: 10vh;
+                    }
+                    .cert .bodycon .content .txt .reqstxt1 {
+                       justify-content: left;
+                       margin-left: 1.5vw;
+                    }
+                        .cert .bodycon .content .txt .col {
+                            height: 10vh;
+                            width: 13vw;
+                        }
+                        .cert .bodycon .content .txt .col1 {
+                            height: 10vh;
+                            width: 18vw;
+                        }
+                        .cert .bodycon .content .txt .nextreqs {
+                            margin-left: 3vw;
+                        }
+            .cert .bodycon .content .btn {
+                cursor: pointer;
+                margin-left: .9vw;
+                height: 10vh;
+                width: 5vw;
+                border-radius: 100px;
+                border: 0.1vw solid white;
+                color: white;
+                background-color: rgba(0, 136, 25, 1);
+            }
+                .cert .bodycon .content .btn:hover  {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: -3vh;
+                    margin-bottom: -3vh;
+                    height: 66vh;
+                    width: 30%;
+                    border-radius: 0px;
+                    border-color: rgba(0, 136, 25, 1);
+                    color: rgba(0, 136, 25, 1);
+                    background-color: white;
+                    transition: 0.2s ease-in-out;
+                }
+            .cert .bodycon .content .applycert {
+                transition: transform 0.4s, top 0.4s;
+                z-index: 1;
+                position: absolute;
+                top: -20vh;
+                left: 25vw;
+                height: 70vh;
+                width: 50vw;    
+                border: 3px solid rgb(227, 227, 227);
+                border-radius: 100px;
+                transform: scale(0.1);
+                background-color: rgba(0, 136, 25, 1);
+                visibility: hidden;
+            }
+            .cert .bodycon .content .applycert .applyicon {
+                margin-top: 5vh;
+                margin-left: 17vw;
+                height: 26vh;
+                width: 16vw;
+            }
+            .cert .bodycon .content .applycert .applytxt1 {
+                text-align: center;
+                margin-top: 2vh;
+                font-size: 45px;
+                font-weight: bold;
+                color: white;
+            }
+            .cert .bodycon .content .applycert .applytxt2 {
+                text-align: center;
+                margin-top: -5vh;
+                padding-left: 1vw;
+                padding-right: 1vw;
+                font-size: 20px;
+                color: white;
+            }
+            .cert .bodycon .content .applycert .applybtn {
+                cursor: pointer;
+                margin-top: 0vh;
+                margin-left: 20vw;
+                font-size: 15px;
+                height: 8vh;
+                width: 10vw;
+                border: none;
+                border-radius: 100px;
+                color: rgba(0, 136, 25, 1);
+                background-color: white;
+            }
+            .cert .bodycon .content .applycert .applybtn:hover {
+                transition: 0.3s;
+                font-size: 150%;
+            }
+            .cert .bodycon .content .applycert .processicon {
+                margin-top: 2vh;
+                margin-left: 19vw;
+                height: 24vh;
+                width: 12vw;
+            }
+            .cert .bodycon .content .applycert .processtxt1 {
+                text-align: center;
+                margin-top: -2vh;
+                font-size: 3em;
+                font-weight: bold;
+                color: white;
+            }
+            .cert .bodycon .content .applycert .processtxt2 {
+                text-align: center;
+                margin-top: -4vh;
+                padding-left: 1vw;
+                padding-right: 1vw;
+                font-size: 1.3em;
+                color: white;
+            }
+            .cert .bodycon .content .applycert .processtxt3 {
+                text-align: center;
+                margin-top: 3vh;
+                padding-left: 1vw;
+                padding-right: 1vw;
+                font-size: 1em;
+                color: white;
+            }
+                .cert .bodycon .content .applycert .processtxt3:hover {
+                    cursor: pointer;
+                    color: blue;
+                    text-decoration: underline;
+                    font-size: 1.1em;
+                }
+            .cert .bodycon .content .applycert .processbtncont {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: fit-content;
+            }
+                .cert .bodycon .content .applycert .processbtncont .processbtn1,
+                .cert .bodycon .content .applycert .processbtncont .processbtn2 {
+                    cursor: pointer;
+                    font-size: 15px;
+                    margin-top: 1.5vh;
+                    height: 8vh;
+                    width: 13vw;
+                    border: none;
+                    border-radius: 100px;
+                    color: rgba(0, 136, 25, 1);
+                    background-color: white;
+                }
+                .cert .bodycon .content .applycert .processbtncont .processbtn2 {
+                    margin-left: 2vw;
+                }
+                    .cert .bodycon .content .applycert .processbtn1:hover,
+                    .cert .bodycon .content .applycert .processbtn2:hover {
+                        transition: 0.3s;
+                        font-size: 150%;
+                    }
+        .cert .bodycon .footer {
+            height: 20vh;
+        }
+
+
+
+.certapplication {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-image: url(images/backgroud1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+    .certapplication .headcon {
+        display: flex;
+        width: 100vw;
+        height: 5em;
+        background-color: rgba(0, 136, 53);
+    }
+        .certapplication .headcon .logocon {
+            z-index: 1;
+            margin-left: 1vw;
+            margin-top: 3vh;
+            height: 25vh;
+            width: 25vh;
+        }
+        .certapplication .headcon .brgy {
+            margin-left: 7.8vw;
+            margin-top: 2vh;
+            font-size: 2.8em;
+            color: rgba(251, 242, 207, 1);
+        }
+    .certapplication .bodycon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        width: 80vw;
+        background-color: white;
+    }
+        .certapplication .bodycon .certformcont {
+            margin-top: 4vh;
+            margin-bottom: 4vh;
+            height: fit-content;
+            width: 70vw;
+            border: 4px solid rgba(0, 136, 53);
+            border-radius: 30px;
+            background-color: rgba(0, 131, 52, 0.492);
+        }
+            .certapplication .bodycon .header {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 20vh;
+                text-align: center;
+                font-size: 3em;
+                font-weight: bold;
+                color: rgba(0, 136, 53);
+                border-top: 0px solid;
+                border-right: 0px solid;
+                border-left: 0px solid;
+                border-top-left-radius: 25px;
+                border-top-right-radius: 25px;
+                border-bottom: 4px solid rgba(0, 136, 53);
+                background-color: rgba(255, 255, 255, 0.849);
+            }
+            .certapplication .bodycon .rowcont,
+            .certapplication .bodycon .rowcont2 {
+                display: flex;
+                align-items: center;
+                height: fit-content;
+                padding-top: 1vh;
+                padding-bottom: 1vh;
+                border-bottom: 4px dashed rgba(0, 136, 53);
+            }
+            .certapplication .bodycon .rowcont2 {
+                border-bottom: none;
+            }
+                .certapplication .bodycon .halfcont {
+                    justify-content: left;
+                    padding-left: 2vw;
+                    width: 50%;
+                }
+                    .certapplication .bodycon .labeltxt {
+                        margin-left: 2vw;
+                        width: 35vw;
+                        font-size: 2em;
+                        font-weight: bold;
+                        color: white;
+                    }
+                    .certapplication .bodycon .datatxt {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: 3vw;
+                        height: 10vh;
+                        width: fit-content;
+                        padding-left: 3vw;
+                        padding-right: 3vw;
+                        font-size: 1.5em;
+                        color: black;
+                        border: none;
+                        border-radius: 50px;
+                        background-color: white;
+                        text-transform: uppercase;
+                    }
+                    .certapplication .bodycon .img{
+                        margin-left: 18vh;
+                        height: 30vh;
+                        width: 15vw;
+                    }
+                    .certapplication .bodycon input[type="file"]{
+                        display: none;
+                    }
+                    .certapplication .bodycon .inputicon {
+                        margin-right: 2vw;
+                        width: 3vw;
+                        height: 6vh;
+                    }
+                    .certapplication .bodycon label{
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: 1.2em;
+                        height: 10vh;
+                        margin-top: -2vh;
+                        margin-bottom: 3vh;
+                        margin-left: 13vh;
+                        width: 20vw;
+                        border-radius: 30px;
+                        background-color: rgba(0, 136, 53);
+                    }
+                        .certapplication .bodycon label:hover{
+                            transition: 0.1s;
+                            border: 3px solid white;
+                        }
+                    .certapplication .bodycon .btncont {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: 3vw;
+                        margin-top: 2vh;
+                        margin-bottom: 2vh;
+                        height: 15vh;
+                        width: 90%;
+                        border-radius: 10px;
+                    }
+                    .certapplication .bodycon .leftbtn,
+                    .certapplication .bodycon .rightbtn {
+                        height: 10vh;
+                        width: 20vw;
+                        border: 2px solid black;
+                        border-radius: 100px;
+                        font-size: 1.2em;
+                        color: rgba(0, 131, 52, 0.492);
+                        background-color: white;
+                    }
+                    .certapplication .bodycon .rightbtn {
+                        margin-left: 5vw;
+                    }
+                        .certapplication .bodycon .leftbtn:hover,
+                        .certapplication .bodycon .rightbtn:hover {
+                            transition: 0.3s;
+                            color: white;
+                            background-color: rgba(0, 136, 53);
+                        }
+        .certapplication .bodycon .footer {
+            height: 40vh;
+        }
+
+
+.announce {
+    min-height: fit-content;
+}
+    .announce .bodycon {
+        margin-right: 1vw;
+        overflow: auto;
+        width: 76vw;
+        height:100vh;
+        background-color: white;
+    }
+        .announce .bodycon .header {
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            height: 10vh;
+            color: rgba(251, 242, 207, 1);
+            border-bottom: 0.3vw solid rgba(0, 136, 25, 1);
+        }
+            .announce .bodycon .header .headtxt{
+                margin-right: 3vw;
+                font-size: 4em;
+                font-weight: bold;
+                color: rgba(251, 242, 207, 1);
+                text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.611);
+            }
+        .announce .bodycon .posts {
+            display: flex;
+            height: 100%;
+        }
+            .announce .bodycon .posts .crosswise {
+                height: fit-content;
+                width: 55vw;
+            }
+                .announce .bodycon .posts .crosswise .crosscont {
+                    position: relative;
+                    display: flex;
+                    margin-left: 1.9vw;
+                    margin-top: 5vh;
+                    height: 40vh;
+                    width: 50vw;
+                    border-radius: 8px;
+                    border: 3px solid rgba(0, 136, 25, 1);
+                    background-color: rgba(0, 136, 25, 0.466);
+                }
+                    .announce .bodycon .posts .crosswise .crosscont h3{
+                        position: absolute;
+                        margin-top: 2vh;
+                        margin-left: 2vh;
+                        font-weight: bold;
+                        font-size: 2vw;
+                        color: rgba(251, 242, 207, 1);
+                    }
+                    .announce .bodycon .posts .crosswise .crosscont .img{
+                        margin-top: 8vh;
+                        margin-left: 2vh;
+                        height: 30vh;
+                        width: 15vw;
+                    }
+                    .announce .bodycon .posts .crosswise .crosscont .txt{
+                        margin-left: 1.5vw;
+                        margin-top: 8vh;
+                        padding-left: 0.5vw;
+                        padding-right: 0.5vw;
+                        height: 30vh;
+                        width: 30vw;
+                        font-size: 1vw;
+                        border-radius: 10px;
+                        background-color: white;
+                    overflow: auto;
+                    }
+                        .announce .bodycon .posts .crosswise .crosscont .txt span{
+                            color: blue;
+                        }
+                        .announce .bodycon .posts .crosswise .crosscont .txt span:hover{
+                            cursor: pointer;
+                        }
+            .announce .bodycon .posts .lengthwise {
+                position:relative;
+                height: fit-content;
+                width: 21vw;
+            }
+                .announce .bodycon .posts .lengthwise .lengthcont {
+                    margin-left: 2vw;
+                    margin-top: 5vh;
+                    padding-left: 1vw;
+                    padding-right: 1vw;
+                    height: 85vh;
+                    width: 15vw;
+                    border-radius: 8px;
+                    border: 3px solid rgba(0, 136, 25, 1);
+                    background-color: rgba(0, 136, 25, 0.466);
+                }
+                    .announce .bodycon .posts .lengthwise .lengthcont h3 {
+                        margin-top: 1vh;
+                        margin-left: 1vh;
+                        font-weight: bold;
+                        font-size: 2vw;
+                        color: rgba(251, 242, 207, 1);
+                    }
+                    .announce .bodycon .posts .lengthwise .lengthcont .img{
+                        margin-top: 1vh;
+                        margin-left: 0.2vh;
+                        margin-bottom: 7vh;
+                        height: 30vh;
+                        width: 15vw;
+                    }
+            .announce .bodycon .posts .footer {
+                height: 30vh;
+            }
+.persinfo {
+    min-height: fit-content;
+}
+    .persinfo .bodycon {
+        margin-right: 1vw;
+        overflow: auto;
+        width: 76vw;
+        height:100vh;
+        background-color: white;
+    }
+        .persinfo .bodycon .header {
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            height: 10vh;
+            color: rgba(251, 242, 207, 1);
+            border-bottom: 0.3vw solid rgba(0, 136, 25, 1);
+        }
+            .persinfo .bodycon .header .headtxt{
+                margin-right: 3vw;
+                font-size: 4em;
+                font-weight: bold;
+                color: rgba(251, 242, 207, 1);
+                text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.611);
+            }
+        .persinfo .bodycon .userinfo {
+            display: flex;
+            height: 100%;
+        }
+            .persinfo .bodycon .userinfo .user {
+                height: fit-content;
+                width: 25vw;
+            }
+                .persinfo .bodycon .userinfo .user .container {
+                    background-color:transparent;
+                }
+                .persinfo .bodycon .userinfo .user .container:hover {
+                    background-color: rgba(0, 136, 25, 1);
+                    color: white;
+                }
+                .persinfo .bodycon .userinfo .user .usercont {
+                    margin-left: 1vw;
+                    margin-top: 4vh;
+                    height: fit-content;
+                    width: 22.5vw;
+                    border-radius: 8px;
+                    border: 3px solid rgba(0, 136, 25, 1);
+                }
+                        .persinfo .bodycon .userinfo .user .usercont:hover > .img {
+                            transition: 0.3s;
+                            margin-top: 4vh;
+                            margin-left: 1.6vh;
+                            height: 42vh;
+                            width: 21vw;
+                        }
+                    .persinfo .bodycon .userinfo .user .usercont .img {
+                        margin-top: 4vh;
+                        margin-left: 4.5vh;
+                        height: 36vh;
+                        width: 18vw;
+                    }
+                    .persinfo .bodycon .userinfo .user .usercont h2 {
+                        display: flex;
+                        justify-content: center;
+                        color: rgba(0, 136, 25, 1);
+                }
+                    .persinfo .bodycon .userinfo .user .usercont .infocon1 {
+                        position: relative;
+                        display: flex;
+                        justify-content: right;
+                        padding-bottom: 2.7vh;
+                        height: 8vh;
+                        width: 100%;
+                        border-top: 2px solid rgba(0, 136, 25, 1);
+                        border-bottom: 2px solid rgba(0, 136, 25, 1);
+                    }
+                    .persinfo .bodycon .userinfo .user .usercont .infocon2 {
+                        position: relative;
+                        display: flex;
+                        justify-content: right;
+                        padding-bottom: 2.7vh;
+                        height: 8vh;
+                        width: 100%;
+                        border-bottom: 2px solid rgba(0, 136, 25, 1);
+                    }
+                        .persinfo .bodycon .userinfo .user .usercont .label{
+                            justify-content: left;
+                        }
+                            .persinfo .bodycon .userinfo .user .usercont .label .img {
+                                position: absolute;
+                                margin-top: 1vh;
+                                margin-left: -21.5vw;
+                                height: 8vh;
+                                width: 4vw;
+                            }
+                            .persinfo .bodycon .userinfo .user .usercont .label .txt {
+                                position: absolute;
+                                margin-top: 3.5vh;
+                                margin-left: -16vw;
+                                font-size: 1.2vw;
+                                border: none;
+                                color: rgba(0, 136, 25, 1);
+                            }
+                            .persinfo .bodycon .userinfo .user .usercont .label .address {
+                                position: absolute;
+                                margin-top: 0.5vh;
+                                margin-left: -16vw;
+                                font-size: 1.2vw;
+                                border: none;
+                                color: rgba(0, 136, 25, 1);
+                            }
+                        .persinfo .bodycon .userinfo .user .usercont .info {
+                            position: absolute;
+                            margin-top: 3.5vh;
+                            margin-right: 1vw;
+                            font-size: 1.2vw;
+                            border: none;
+                            color: rgba(0, 136, 25, 1);
+                        }
+            .persinfo .bodycon .userinfo .headoptionscont {
+                height: fit-content;
+                width: 25vw;
+            }
+                .persinfo .bodycon .userinfo .headoptionscont .btncont {
+                    display: flex;
+                    justify-content: center;
+                }
+                    .persinfo .bodycon .userinfo .headoptionscont button {
+                        cursor: pointer;
+                        margin-top: 6vh;
+                        font-size: 15px;
+                        height: 10vh;
+                        width: 18vw;
+                        border: 3px solid rgba(0, 136, 53);
+                        border-radius: 100px;
+                        color: white;
+                        background-color: rgba(0, 131, 52, 0.492);
+                    }
+                        .persinfo .bodycon .userinfo .headoptionscont button:hover {
+                            transition: 0.3s;
+                            width: 20vw;
+                            font-size: 130%;
+                            background-color: rgba(0, 136, 53);
+                        }
+            .persinfo .bodycon .userinfo .appliedcert {
+                display: flex;
+                justify-content: center;
+                height: fit-content;
+                width: 49vw;
+            }
+                .persinfo .bodycon .userinfo .appliedcert .certcont {
+                    margin-top: 4vh;
+                    height: fit-content;
+                    width: 100%;
+                    border:2px solid rgba(0, 136, 25, 1);
+                }
+                    .persinfo .bodycon .userinfo .appliedcert .certcont .certheader {
+                        display: flex;
+                        align-items: center;
+                        justify-content: left;
+                        padding-left: 1vw;
+                        height: 10vh;
+                        font-size: 2.5em;
+                        font-weight: bold;
+                        color: rgba(0, 136, 25, 1);
+                        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.611);
+                        border-bottom: 2px solid rgba(0, 136, 25, 1);
+                        background-color: white;
+                    }
+                    .persinfo .bodycon .userinfo .appliedcert .certcont .certs1 {
+                        display: flex;
+                        align-items: center;
+                        margin-top: -4.4vh;
+                        margin-bottom: -7.8vh;
+                        width: 100%;
+                    }
+                        .persinfo .bodycon .userinfo .appliedcert .certcont .certs1 .certlabel1 {
+                            font-size: 2em;
+                            font-weight: bold;
+                            width: 70%;
+                            padding-left: 1vw;
+                            color: rgba(0, 136, 25, 1);
+                            border-right: 2px solid rgba(0, 136, 25, 1);
+                            border-bottom: 2px solid rgba(0, 136, 25, 1);
+                            background-color: white;
+                        }
+                        .persinfo .bodycon .userinfo .appliedcert .certcont .certs1 .certlabel2 {
+                            font-size: 2em;
+                            font-weight: bold;
+                            width: 26%;
+                            padding-left: 1vw;
+                            color: rgba(0, 136, 25, 1);
+                            border-bottom: 2px solid rgba(0, 136, 25, 1);
+                            background-color: white;
+                        }
+                    .persinfo .bodycon .userinfo .appliedcert .certcont .certs2 {
+                        display: flex;
+                        align-items: center;
+                        justify-content: left;
+                        margin-top: -6.7vh;
+                        width: 100%;
+                    }
+                    .persinfo .bodycon .userinfo .appliedcert .certcont .certs3 {
+                        display: flex;
+                        align-items: center;
+                        justify-content: left;
+                        margin-top: -6.7vh;
+                        margin-bottom: -3.6vh;
+                        width: 100%;
+                    }
+                        .persinfo .bodycon .userinfo .appliedcert .certcont .label {
+                            justify-content: center;
+                            font-size: 1.5em;
+                            width: 70%;
+                            padding-left: 1vw;
+                            color: rgba(0, 136, 25, 1);
+                            border-right: 2px solid rgba(0, 136, 25, 1);
+                            border-bottom: 2px solid rgba(0, 136, 25, 1);
+                            background-color: white;
+                        }
+                        .persinfo .bodycon .userinfo .appliedcert .certcont .status {
+                            font-size: 1.5em;
+                            width: 26%;
+                            padding-left: 1vw;
+                            color: rgba(0, 136, 25, 1);
+                            border-bottom: 2px solid rgba(0, 136, 25, 1);
+                            background-color: white;
+                        }
+            .persinfo .bodycon .userinfo .fammembers {
+                display: flex;
+                justify-content: center;
+                height: fit-content;
+                width: 49vw;
+            }
+                .persinfo .bodycon .userinfo .fammembers .memberslistcont {
+                    height: fit-content;
+                    width: 100%;
+                }
+                    .persinfo .bodycon .userinfo .fammembers .memberscont {
+                        display: flex;
+                        align-items: center;
+                        margin-left: 3vw;
+                        margin-top: 4vh;
+                        margin-bottom: 4vh;
+                        height: 15vh;
+                        width: 90%;
+                        border-radius: 100px;
+                        background-color: rgba(0, 131, 52, 0.492);
+                    }
+                        .persinfo .bodycon .userinfo .fammembers .memberscont input[type = "radio"] {
+                            margin-left: 0vw;
+                            height: 3vh;
+                            width: 3vw;
+                        }
+                        .persinfo .bodycon .userinfo .fammembers .memberscont .memberimg {
+                            margin-left: 1vw;
+                            height: 12vh;
+                            width: 6vw;
+                        }
+                        .persinfo .bodycon .userinfo .fammembers .memberscont .dashtxt {
+                            margin-top: 3vh;
+                            margin-left: 0.5vw;
+                            text-align: center;
+                            font-size: 1.5em;
+                            font-weight: bold;
+                        }
+                        .persinfo .bodycon .userinfo .fammembers .memberscont .txtcont1 {
+                            margin-left: 0.5vw;
+                            width: 17vw;
+                        }
+                        .persinfo .bodycon .userinfo .fammembers .memberscont .txtcont2 {
+                            margin-left: 0.5vw;
+                            width: 17vw;
+                        }
+                            .persinfo .bodycon .userinfo .fammembers .memberscont .datatxt {
+                                margin-top: 2vh;
+                                text-align: center;
+                                font-size: 0.9em;
+                                font-weight: bold;
+                                text-transform: uppercase;
+                            }
+                            .persinfo .bodycon .userinfo .fammembers .memberscont .labeltxt {
+                                margin-top: -2vh;
+                                text-align: center;
+                                font-size: 0.8em;
+                                color:rgb(47, 47, 47);
+                            }
+                        .persinfo .bodycon .userinfo .fammembers .btncont {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-left: 3vw;
+                            margin-top: 8vh;
+                            height: 15vh;
+                            width: 90%;
+                            border-radius: 10px;
+                        }
+                        .persinfo .bodycon .userinfo .fammembers .btncont .leftbtn,
+                        .persinfo .bodycon .userinfo .fammembers .btncont .rightbtn {
+                            height: 8vh;
+                            width: 20vw;
+                            border: 2px solid black;
+                            border-radius: 100px;
+                            font-size: 1.2em;
+                            color: rgba(0, 131, 52, 0.492);
+                            background-color: white;
+                        }
+                        .persinfo .bodycon .userinfo .fammembers .btncont .rightbtn {
+                            margin-left: 1vw;
+                        }
+                            .persinfo .bodycon .userinfo .fammembers .btncont .leftbtn:hover,
+                            .persinfo .bodycon .userinfo .fammembers .btncont .rightbtn:hover {
+                                transition: 0.3s;
+                                color: white;
+                                background-color: rgba(0, 136, 53);
+                            }
+            .persinfo .bodycon .userinfo .footer {
+                height: 30vh;
+            }
+
+
+
+.brgyoff {
+    min-height: 100%vh;
+}
+    .brgyoff .bodycon {
+        margin-right: 1vw;
+        overflow: auto;
+        width: 76vw;
+        height:100vh;
+        background-color: white;
+    }
+        .brgyoff .bodycon .topbody {
+            position:relative;
+            display: flex;
+            justify-content: left;
+            height: 80vh;
+        }
+            .brgyoff .bodycon .topbody .img {
+                position: absolute;
+                margin-top: 10vh;
+                margin-left: 13vw;
+                height: 60vh;
+                width: 20vw;
+            }
+            .brgyoff .bodycon .topbody .txt {
+                position: absolute;
+                height: 60vh;
+                width: 30vw;
+                margin-top: 10vh;
+                margin-left: 33vw;
+                color: rgba(0, 136, 25, 1);
+            }
+                .brgyoff .bodycon .topbody .chairman {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .brgyoff .bodycon .topbody .title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: -2vh;
+                }
+                .brgyoff .bodycon .topbody .kagawad {
+                    margin-left: 3.5vw;
+                }
+                .brgyoff .bodycon .topbody span{
+                    padding-left: 6vw;
+                    font-weight: bold;
+                }
+        .brgyoff .bodycon .bottombody {
+            position:relative;
+            display: flex;
+            justify-content: right;
+            height: 80vh;
+        }
+            .brgyoff .bodycon .bottombody .img {
+                position: absolute;
+                margin-top: 10vh;
+                margin-right: 13vw;
+                height: 60vh;
+                width: 20vw;
+            }
+            .brgyoff .bodycon .bottombody .img {
+                position: absolute;
+                height: 60vh;
+                width: 20vw;
+            }
+            .brgyoff .bodycon .bottombody .txt {
+                position: absolute;
+                height: 60vh;
+                width: 30vw;
+                margin-top: 10vh;
+                margin-right: 33vw;
+                color: rgba(0, 136, 25, 1);
+            }
+            .brgyoff .bodycon .bottombody .chairman {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .brgyoff .bodycon .bottombody .title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: -2vh;
+            }
+            .brgyoff .bodycon .bottombody .kagawad {
+                margin-left: 3.5vw;
+            }
+            .brgyoff .bodycon .bottombody span{
+                padding-left: 6vw;
+                font-weight: bold;
+            }
+        .brgyoff .bodycon .footer {
+            height: 20vh;
+        }
+
+
+
+.admhome {
+    overflow: hidden;
+}
+    .admhome .bodycon {
+        margin-right: 1vw;
+        width: 76vw;
+        height: 100vh;
+        background-image: url(images/background3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+        .admhome .bodycon .capabilities {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 63vh;
+        }
+            .admhome .bodycon .capabilities .container {
+                cursor: pointer;
+                margin: 2.5vw;
+                height: 30vh;
+                width: 20vw;
+                border: 2px solid white;
+                border-radius: 10px;
+                background-color: rgba(0, 136, 53);
+            }
+                .admhome .bodycon .capabilities .container:hover {
+                    transition: 0.3s;
+                    height: 40vh;
+                }
+                .admhome .bodycon .capabilities .container:hover > .label {
+                    transition: 0.3s;
+                    margin-left: -0.4vw;
+                    width: 21vw;
+                    font-size: 2.7em;
+                }
+                .admhome .bodycon .capabilities .container:hover > .image1 {
+                    transition: 0.3s;
+                    margin-left: 4vw;
+                    height: 80%;
+                }
+                .admhome .bodycon .capabilities .container:hover > .image2 {
+                    transition: 0.3s;
+                    margin-left: 1vw;
+                    height: 70%;
+                }
+                .admhome .bodycon .capabilities .container:hover > .image3 {
+                    transition: 0.3s;
+                    margin-top: 3vh;
+                    margin-left: 1.5vw;
+                    height: 60%;
+                }
+                .admhome .bodycon .capabilities .container .label {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: -2.5vh;
+                    margin-left: -0.2vw;
+                    height: 12vh;
+                    width: 20.5vw;
+                    font-size: 2.5em;
+                    border-radius: 10px;
+                    color: rgba(0, 136, 53);
+                    background-color: rgba(251, 242, 207, 1);
+                }
+                .admhome .bodycon .capabilities .container .image1 {
+                    margin-top: 0vh;
+                    margin-left: 6vw;
+                    height: 70%;
+                }
+                .admhome .bodycon .capabilities .container .image2 {
+                    margin-top: 2vh;
+                    margin-left: 4vw;
+                    height: 60%;
+                }
+                .admhome .bodycon .capabilities .container .image3 {
+                    margin-top: 1.5vh;
+                    margin-left: 4vw;
+                    height: 55%;
+                }
+        .admhome .bodycon .logout {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 17vh;
+        }
+            .admhome .bodycon .logout .btn{
+                cursor: pointer;
+                margin-top: -15vh;
+                font-size: 15px;
+                height: 10vh;
+                width: 18vw;
+                border: 0px solid white;;
+                border-radius: 100px;
+                color: rgba(0, 136, 53);
+                background-color: rgba(251, 242, 207, 1);
+            }
+            .admhome .bodycon .logout .btn:hover{
+                transition: 0.3s;
+                width: 20vw;
+                font-size: 150%;
+            }
+
+
+
+.admannounce {
+    min-height: fit-content;
+}
+    .admannounce .bodycon {
+        margin-right: 1vw;
+        overflow: auto;
+        width: 76vw;
+        height:100vh;
+        background-color: white;
+    }
+        .admannounce .bodycon .header {
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            height: 10vh;
+            color: rgba(251, 242, 207, 1);
+            border-bottom: 0.3vw solid rgba(0, 136, 25, 1);
+        }
+            .admannounce .bodycon .header .headtxt{
+                margin-right: 3vw;
+                font-size: 4em;
+                font-weight: bold;
+                color: rgba(251, 242, 207, 1);
+                text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.611);
+            }
+        .admannounce .bodycon .posts {
+            display: flex;
+            height: 100%;
+        }
+            .admannounce .bodycon .posts .crosswise {
+                height: fit-content;
+                width: 55vw;
+            }
+                .admannounce .bodycon .posts .crosswise .crosscont {
+                    margin-left: 1.9vw;
+                    margin-top: 5vh;
+                    height: fit-content;
+                    width: 50vw;
+                    border-radius: 8px;
+                    border: 3px solid rgba(0, 136, 25, 1);
+                    background-color: rgba(0, 136, 25, 0.466);
+                }
+                    .admannounce .bodycon .posts .crosswise .crosscont h3{
+                        margin-top: 3vh;
+                        margin-left: 3vh;
+                        font-weight: bold;
+                        font-size: 2.5em;
+                        color: rgba(251, 242, 207, 1);
+                    }
+                    .admannounce .bodycon .posts .crosswise .crosscont .flexcont{
+                        display: flex;
+                        margin-top: -10vh;
+                    }
+                    .admannounce .bodycon .posts .crosswise .crosscont .img{
+                        margin-top: 15vh;
+                        margin-left: 2vh;
+                        height: 30vh;
+                        width: 15vw;
+                    }
+                    .admannounce .bodycon .posts .crosswise .crosscont input[type="file"]{
+                        display: none;
+                    }
+                    .admannounce .bodycon .posts .crosswise .crosscont .inputicon {
+                        margin-right: 0.5vw;
+                        width: 3vw;
+                        height: 6vh;
+                    }
+                    .admannounce .bodycon .posts .crosswise .crosscont label{
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: 1.2em;
+                        height: 10vh;
+                        margin-top: 5vh;
+                        margin-left: 1vw;
+                        margin-right: 1vw;
+                        border-radius: 30px;
+                        background-color: rgba(0, 136, 53);
+                    }
+                        .admannounce .bodycon .posts .crosswise .crosscont label:hover{
+                            transition: 0.1s;
+                            border: 3px solid white;
+                        }
+                    .admannounce .bodycon .posts .crosswise .crosscont .posttextcont {
+                        margin-left: 1.5vw;
+                        margin-right: 1.5vw;
+                    }
+                        .admannounce .bodycon .posts .crosswise .crosscont p {
+                            margin-top: 5vh;
+                            font-size: 1.8em;
+                            color: rgba(0, 136, 53);
+                        }
+                        .admannounce .bodycon .posts .crosswise .crosscont .posttextcont .headertxt,
+                        .admannounce .bodycon .posts .crosswise .crosscont .posttextcont .bodytxt,
+                        .admannounce .bodycon .posts .crosswise .crosscont .posttextcont .linktxt {
+                            margin-top: -3vh;
+                            padding-left: 0.5vw;
+                            padding-right: 0.5vw;
+                            min-width: 30vw;
+                            max-width: 30vw;
+                            font-size: 1vw;
+                            border-radius: 10px;
+                            background-color: white;
+                        }
+                        .admannounce .bodycon .posts .crosswise .crosscont .posttextcont .headertxt {
+                            height: 20vh;
+                        }
+                        .admannounce .bodycon .posts .crosswise .crosscont .posttextcont .bodytxt {
+                            height: 40vh;
+                        }
+                        .admannounce .bodycon .posts .crosswise .crosscont .posttextcont .linktxt {
+                            height: 5vh;
+                            color: blue;
+                            text-decoration: none;
+                        }
+                    .admannounce .bodycon .posts .crosswise .crosscont .btncont {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 5vh;
+                        margin-bottom: 5vh;
+                    }
+                        .admannounce .bodycon .posts .crosswise .crosscont .btncont input[type = "submit"],
+                        .admannounce .bodycon .posts .crosswise .crosscont .btncont input[type = "reset"] {
+                            width: 12vw;
+                            height: 7vh;
+                            font-size: 1.2em;
+                            color: white;
+                            border: 1px solid rgba(0, 136, 53);
+                            border-radius: 30px;
+                            background-color: rgba(0, 136, 53);
+                        }
+                        .admannounce .bodycon .posts .crosswise .crosscont .btncont input[type = "reset"] {
+                            margin-left: 6vw;
+                        }
+                            .admannounce .bodycon .posts .crosswise .crosscont .btncont input[type = "submit"]:hover,
+                            .admannounce .bodycon .posts .crosswise .crosscont .btncont input[type = "reset"]:hover {
+                                transition: 0.1s;
+                                border: 3px solid white;
+                            }
+            .admannounce .bodycon .posts .lengthwise {
+                position:relative;
+                height: fit-content;
+                width: 21vw;
+            }
+                .admannounce .bodycon .posts .lengthwise .lengthcont {
+                    margin-left: 2vw;
+                    margin-top: 5vh;
+                    padding-left: 1vw;
+                    padding-right: 1vw;
+                    height: fit-content;
+                    width: 15vw;
+                    border-radius: 8px;
+                    border: 3px solid rgba(0, 136, 25, 1);
+                    background-color: rgba(0, 136, 25, 0.466);
+                }
+                    .admannounce .bodycon .posts .lengthwise .lengthcont h3 {
+                        margin-top: 1vh;
+                        margin-left: 1vh;
+                        font-weight: bold;
+                        font-size: 2vw;
+                        color: rgba(251, 242, 207, 1);
+                    }
+                    .admannounce .bodycon .posts .lengthwise .lengthcont .img{
+                        margin-top: 1vh;
+                        margin-left: 0.2vh;
+                        margin-bottom: 7vh;
+                        height: 30vh;
+                        width: 15vw;
+                    }
+                    .admannounce .bodycon .posts .lengthwise .lengthcont .editcont {
+                        margin-top: -8vh;
+                    }
+                    .admannounce .bodycon .posts .lengthwise .lengthcont .label{
+                        text-align: center;
+                        font-size: 1.5em;
+                        font-weight: bold;
+                        color: rgba(251, 242, 207, 1);
+                    }
+                    .admannounce .bodycon .posts .lengthwise .lengthcont input[type="file"]{
+                        display: none;
+                    }
+                    .admannounce .bodycon .posts .lengthwise .lengthcont .inputicon {
+                        margin-right: 0.5vw;
+                        width: 3vw;
+                        height: 6vh;
+                    }
+                    .admannounce .bodycon .posts .lengthwise .lengthcont label{
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: 1.2em;
+                        height: 10vh;
+                        margin-top: 0vh;
+                        margin-left: 1vw;
+                        margin-right: 1vw;
+                        border-radius: 30px;
+                        background-color: rgba(0, 136, 53);
+                    }
+                        .admannounce .bodycon .posts .lengthwise .lengthcont label:hover{
+                            transition: 0.1s;
+                            border: 3px solid white;
+                        }
+
+                        .admannounce .bodycon .posts .lengthwise .lengthcont .btncont {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-top: 5vh;
+                            margin-bottom: 5vh;
+                        }
+                            .admannounce .bodycon .posts .lengthwise .lengthcont input[type = "submit"],
+                            .admannounce .bodycon .posts .lengthwise .lengthcont input[type = "reset"] {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-top: 1vw;
+                                margin-left: 1vw;
+                                margin-right: 1vw;
+                                width: 13vw;
+                                height: 9vh;
+                                font-size: 1.2em;
+                                color: white;
+                                border: none;
+                                border-radius: 25px;
+                                background-color: rgba(0, 136, 53);
+                            }
+                            .admannounce .bodycon .posts .lengthwise .lengthcont input[type = "reset"] {
+                                margin-bottom: 3vh;
+                            }
+                                .admannounce .bodycon .posts .lengthwise .lengthcont input[type = "submit"]:hover,
+                                .admannounce .bodycon .posts .lengthwise .lengthcont input[type = "reset"]:hover {
+                                    transition: 0.1s;
+                                    border: 3px solid white;
+                                }
+            .admannounce .bodycon .posts .footer {
+                height: 30vh;
+            }
+
+
+
+.admcerts {
+    min-height: fit-content;
+}
+    .admcerts .bodycon {
+        margin-right: 1vw;
+        overflow: auto;
+        width: 76vw;
+        height:100vh;
+        background-color: white;
+    }
+        .admcerts .bodycon .header {
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            height: 10vh;
+            color: rgba(251, 242, 207, 1);
+            border-bottom: 0.3vw solid rgba(0, 136, 25, 1);
+        }
+            .admcerts .bodycon .header .headtxt{
+                margin-right: 3vw;
+                font-size: 4em;
+                font-weight: bold;
+                color: rgba(251, 242, 207, 1);
+                text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.611);
+            }
+        .admcerts .bodycon .certlistcont {
+            display: flex;
+            justify-content: center;
+            height: fit-content;
+            width: 95%;
+        }
+            .admcerts .bodycon .certlistheader {
+                display: flex;
+                align-items: center;
+                height: 15vh;
+                width: 70vw;
+                border-top: 3px solid black;
+                border-left:1px solid black;
+                border-right:1px solid black;
+                border-bottom:2px solid black;
+                background-color: rgba(0, 136, 25, 0.466);
+            }
+            .admcerts .bodycon .certlistcont .certlist{
+                display: flex;
+                height: 10vh;
+                width: 70vw;
+                border:1px solid black;
+            }
+                .admcerts .bodycon .certlistcont .certlist:hover{
+                    transition: 0.6s;
+                    background-color: rgba(0, 136, 53);
+                }
+                .admcerts .bodycon .certlistcont .certlist:hover > .container .certtxt,
+                .admcerts .bodycon .certlistcont .certlist:hover > .container2 .certtxt,
+                .admcerts .bodycon .certlistcont .certlist:hover > .container3 .certtxt {
+                    color: white;
+                }
+                .admcerts .bodycon .certlistcont .certlist:hover > .container3 .btn {
+                    color: rgba(0, 136, 53);
+                    background-color: white;
+                }
+                .admcerts .bodycon .certlistcont .container,
+                .admcerts .bodycon .certlistcont .container2,
+                .admcerts .bodycon .certlistcont .container3 {
+                    height: 100%;
+                    width: 30%;
+                    border: 1px solid black;
+                }
+                .admcerts .bodycon .certlistcont .container2 {
+                    width: 20%;
+                }
+                .admcerts .bodycon .certlistcont .container3 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 20%;
+                }
+                    .admcerts .bodycon .certlistcont .labeltxt {
+                        margin-top: 3vh;
+                        text-align: center;
+                        font-size: 3em;
+                        color: rgba(251, 242, 207, 1);
+                    }
+                    .admcerts .bodycon .certlistcont .certtxt {
+                        margin-top: 3vh;
+                        margin-left: 1vw;
+                        text-align: left;
+                        font-size: 1.2em;
+                        color: rgba(0, 136, 53);
+                    }
+                    .admcerts .bodycon .certlistcont .btn {
+                        cursor: pointer;
+                        width: 13vw;
+                        height: 5vh;
+                        font-size: 1.2em;
+                        color: white;
+                        border: none;
+                        border-radius: 25px;
+                        background-color: rgba(0, 136, 53);
+                    }
+                        .admcerts .bodycon .certlistcont .btn:hover {
+                            transition: 0.1s;
+                            border: 3px solid black;
+                            font-size: 140%;
+                            color: rgba(0, 136, 53);
+                        }
+        .admcerts .bodycon .footer {
+            height: 30vh;
+        }
+
+
+
+.admcertdetails {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-image: url(images/backgroud1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+    .admcertdetails .headcon {
+        display: flex;
+        width: 100vw;
+        height: 5em;
+        background-color: rgba(0, 136, 53);
+    }
+        .admcertdetails .headcon .logocon {
+            z-index: 1;
+            margin-left: 1vw;
+            margin-top: 3vh;
+            height: 25vh;
+            width: 25vh;
+        }
+        .admcertdetails .headcon .brgy {
+            margin-left: 7.8vw;
+            margin-top: 2vh;
+            font-size: 2.8em;
+            color: rgba(251, 242, 207, 1);
+        }
+    .admcertdetails .bodycon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        width: 80vw;
+        background-color: white;
+    }
+        .admcertdetails .bodycon .certformcont {
+            margin-top: 4vh;
+            margin-bottom: 4vh;
+            height: fit-content;
+            width: 70vw;
+            border: 4px solid rgba(0, 136, 53);
+            border-radius: 30px;
+            background-color: rgba(0, 131, 52, 0.492);
+        }
+            .admcertdetails .bodycon .header {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 20vh;
+                text-align: center;
+                font-size: 3em;
+                font-weight: bold;
+                color: rgba(0, 136, 53);
+                border-top: 0px solid;
+                border-right: 0px solid;
+                border-left: 0px solid;
+                border-top-left-radius: 25px;
+                border-top-right-radius: 25px;
+                border-bottom: 4px solid rgba(0, 136, 53);
+                background-color: rgba(255, 255, 255, 0.849);
+            }
+            .admcertdetails .bodycon .rowcont,
+            .admcertdetails .bodycon .rowcont2 {
+                display: flex;
+                align-items: center;
+                height: fit-content;
+                padding-top: 1vh;
+                padding-bottom: 1vh;
+                border-bottom: 4px dashed rgba(0, 136, 53);
+            }
+            .admcertdetails .bodycon .rowcont2 {
+                border-bottom: none;
+            }
+                .admcertdetails .bodycon .imagecont {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding-top: 1vh;
+                    padding-bottom: 1vh;
+                    width: 70vw;
+                }
+                    .admcertdetails .bodycon .labeltxt {
+                        margin-left: 2vw;
+                        width: 35vw;
+                        font-size: 2em;
+                        font-weight: bold;
+                        color: white;
+                    }
+                    .admcertdetails .bodycon .labeltxt2 {
+                        text-align: center;
+                        width: 35vw;
+                        font-size: 2em;
+                        font-weight: bold;
+                        color: white;
+                    }
+                    .admcertdetails .bodycon .datatxt,
+                    .admcertdetails .bodycon .datatxt2,
+                    .admcertdetails .bodycon .datatxt3 {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: 3vw;
+                        height: 10vh;
+                        width: fit-content;
+                        padding-left: 3vw;
+                        padding-right: 3vw;
+                        font-size: 1.5em;
+                        color: black;
+                        border: none;
+                        border-radius: 50px;
+                        background-color: white;
+                        text-transform: uppercase;
+                    }
+                    .admcertdetails .bodycon .datatxt2 {
+                        margin-left: -4vw;
+                    }
+                    .admcertdetails .bodycon .datatxt3 {
+                        margin-left: -4vw;
+                        font-size: 1em;
+                    }
+                    .admcertdetails .bodycon .moveright {
+                        margin-left: 1vw;
+                    }
+                    .admcertdetails .bodycon .img{
+                        height: 120vh;
+                        width: 60vw;
+                    }
+                    .admcertdetails .bodycon .btncont {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: 3vw;
+                        margin-top: 2vh;
+                        margin-bottom: 2vh;
+                        height: 15vh;
+                        width: 90%;
+                        border-radius: 10px;
+                    }
+                    .admcertdetails .bodycon .leftbtn,
+                    .admcertdetails .bodycon .rightbtn {
+                        height: 10vh;
+                        width: 20vw;
+                        border: 2px solid black;
+                        border-radius: 100px;
+                        font-size: 1.2em;
+                        color: rgba(0, 131, 52, 0.492);
+                        background-color: white;
+                    }
+                    .admcertdetails .bodycon .rightbtn {
+                        margin-left: 5vw;
+                    }
+                        .admcertdetails .bodycon .leftbtn:hover,
+                        .admcertdetails .bodycon .rightbtn:hover {
+                            transition: 0.3s;
+                            color: white;
+                            background-color: rgba(0, 136, 53);
+                        }
+        .admcertdetails .bodycon .footer {
+            height: 40vh;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.chmadmin {
+    min-height: fit-content;
+}
+    .chmadmin .bodycon {
+        margin-right: 1vw;
+        overflow: auto;
+        width: 76vw;
+        height:100vh;
+        background-color: white;
+    }
+        .chmadmin .bodycon .header {
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            height: 10vh;
+            color: rgba(251, 242, 207, 1);
+            border-bottom: 0.3vw solid rgba(0, 136, 25, 1);
+        }
+            .chmadmin .bodycon .header .headtxt{
+                margin-right: 3vw;
+                font-size: 4em;
+                font-weight: bold;
+                color: rgba(251, 242, 207, 1);
+                text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.611);
+            }
+        .chmadmin .bodycon .adminlistcont {
+            display: flex;
+            justify-content: center;
+            height: fit-content;
+            width: 100%;
+            background-color: rgba(0, 131, 52, 0.492);
+        }
+            .chmadmin .bodycon .adminlistcont .admincont{
+                display: flex;
+                align-items: center;
+                margin-left: 3vw;
+                margin-top: 4vh;
+                margin-bottom: 4vh;
+                height: 15vh;
+                width: 90%;
+                border-radius: 10px;
+                background-color: rgba(0, 131, 52, 0.492);
+            }
+                .chmadmin .bodycon .adminlistcont .admincont input[type = "radio"] {
+                    margin-left: 0vw;
+                    height: 3vh;
+                    width: 3vw;
+                }
+                .chmadmin .bodycon .adminlistcont .admincont .admimg{
+                    margin-left: 2vw;
+                    height: 12vh;
+                    width: 6vw;
+                }
+                .chmadmin .bodycon .adminlistcont .admincont .dashtxt{
+                    margin-top: 3vh;
+                    margin-left: 0.5vw;
+                    text-align: center;
+                    font-size: 1.5em;
+                    font-weight: bold;
+                }
+                .chmadmin .bodycon .adminlistcont .admincont .txtcont1{
+                    margin-left: 2vw;
+                    width: 18vw;
+                }
+                .chmadmin .bodycon .adminlistcont .admincont .txtcont2{
+                    margin-left: 0.5vw;
+                    width: 18vw;
+                }
+                    .chmadmin .bodycon .adminlistcont .admincont .datatxt{
+                        margin-top: 2vh;
+                        text-align: center;
+                        font-size: 1.5em;
+                        font-weight: bold;
+                    }
+                    .chmadmin .bodycon .adminlistcont .admincont .labeltxt{
+                        margin-top: -5vh;
+                        text-align: center;
+                        font-size: 0.9em;
+                        color:rgb(47, 47, 47);
+                    }
+            .chmadmin .bodycon .adminlistcont .btncont{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 3vw;
+                margin-top: 8vh;
+                height: 15vh;
+                width: 90%;
+                border-radius: 10px;
+            }
+            .chmadmin .bodycon .adminlistcont .btncont .leftbtn,
+            .chmadmin .bodycon .adminlistcont .btncont .rightbtn {
+                height: 65%;
+                width: 25%;
+                border: 2px solid black;
+                border-radius: 100px;
+                font-size: 1.5em;
+                color: rgba(0, 131, 52, 0.492);
+                background-color: white;
+            }
+            .chmadmin .bodycon .adminlistcont .btncont .rightbtn {
+                margin-left: 10vw;
+            }
+                .chmadmin .bodycon .adminlistcont .btncont .leftbtn:hover,
+                .chmadmin .bodycon .adminlistcont .btncont .rightbtn:hover {
+                    transition: 0.2s;
+                    color: white;
+                    background-color: rgba(0, 131, 52, 0.492);
+                }
+        .chmadmin .bodycon .addpopup {
+            transition: transform 0.4s, top 0.4s;
+            z-index: 1;
+            position: absolute;
+            display: flex;
+            top: -20vh;
+            left: 10vw;
+            height: 90vh;
+            width: 80vw;
+            border: 3px solid rgb(227, 227, 227);
+            border-radius: 100px;
+            transform: scale(1);
+            background-color: rgba(0, 136, 25, 1);
+            visibility: hidden;
+        }
+            .chmadmin .bodycon .addpopup .leftcont {
+                width: 30%;
+                border-right: 10px solid rgb(227, 227, 227);
+                /* background-color: red; */
+            }
+            .chmadmin .bodycon .addpopup .rightcont {
+                width: 70%;
+                /* background-color: blue; */
+            }
+            .chmadmin .bodycon .addpopup .popupicon {
+                margin-top: 10vh;
+                margin-left: 4.5vw;
+                height: 30vh;
+                width: 15vw;
+            }
+            .chmadmin .bodycon .addpopup .popuptxt1 {
+                text-align: center;
+                margin-top: 10vh;
+                font-size: 3.5em;
+                font-weight: bold;
+                color: rgba(251, 242, 207, 1);
+            }
+                .chmadmin .bodycon .addpopup .addlabeltxt,
+                .chmadmin .bodycon .addpopup .addlabeltxt2 {
+                    margin-top: -5vh;
+                    margin-left: 2vw;
+                    font-size: 1.5em;
+                    color: white;
+                }
+                .chmadmin .bodycon .addpopup .addlabeltxt2 {
+                    margin-top: -5vh;
+                    margin-left: 7vw;
+                }
+                .chmadmin .bodycon .addpopup .addlabeltxt3,
+                .chmadmin .bodycon .addpopup .addlabeltxt4 {
+                    margin-top: 5vh;
+                    margin-left: 2vw;
+                    font-size: 1.5em;
+                    color: white;
+                }
+                .chmadmin .bodycon .addpopup .addlabeltxt4 {
+                    margin-top: 5vh;
+                    margin-left: 7vw;
+                }
+                .chmadmin .bodycon .addpopup .addinputtxt1,
+                .chmadmin .bodycon .addpopup .addinputtxt2 {
+                    margin-top: -3vh;
+                    text-align: center;
+                    height: 10vh;
+                    width: 18vw;
+                    border: none;
+                    border-radius: 90px;
+                }
+                .chmadmin .bodycon .addpopup .addinputtxt2 {
+                    margin-left: 5vw;
+                }
+                .chmadmin .bodycon .addpopup .addinputtxt3,
+                .chmadmin .bodycon .addpopup .addinputtxt4 {
+                    margin-top: -3vh;
+                    text-align: center;
+                    height: 10vh;
+                    width: 18vw;
+                    border: none;
+                    border-radius: 90px;
+                }
+                .chmadmin .bodycon .addpopup .addinputtxt4 {
+                    margin-left: 1vw;
+                }
+            .chmadmin .bodycon .addpopup .popupbtncont {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 8vh;
+                height: fit-content;
+            }
+                .chmadmin .bodycon .addpopup .popupbtncont .popupbtn1 {
+                    cursor: pointer;
+                    font-size: 15px;
+                    height: 8vh;
+                    width: 13vw;
+                    border: none;
+                    border-radius: 100px;
+                    color: rgba(0, 136, 25, 1);
+                    background-color: white;
+                }
+                    .chmadmin .bodycon .addpopup .popupbtn1:hover {
+                        transition: 0.3s;
+                        font-size: 150%;
+                    }
+            .chmadmin .bodycon .footer {
+                height: 30vh;
+            }

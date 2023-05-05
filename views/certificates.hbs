@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Anek Gujarati' rel='stylesheet'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="main" onload="initClock()">
+        <div class="headcon">
+            <div class="logocon">
+                <img alt="brgy logo" src="images/logo.png"/>
+            </div>
+            <h1 class="brgy">Information System of Barangay Daang Bakal</h1>
+            <div class="toptime">
+                <span id = "hour">00</span> :
+                <span id = "minute">00</span>
+                <span id = "period">AM</span>
+            </div>
+        </div>
+        <div class="headcon">
+            <ul>
+                <li onclick="window.location.href='/loggedin'">Home</li>
+                <li onclick="window.location.href='/personalinfo'">Residents Information</li>
+                <li onclick="window.location.href='/announcements'">Announcement</li>
+                <li onclick="window.location.href='/barangayofficials'">Barangay Officials</li>
+                <li onclick="window.location.href='/certificates'">Certificates</li>
+                <li onclick="window.location.href='/login'">LOGOUT</li>
+            </ul>
+            <div class="bottomtime">
+                <span id = "day">Day</span>,
+                <span id = "month">Month</span>
+                <span id = "date">00</span>
+                <span id = "year">Year</span>
+            </div>
+        </div>
+        <div class = "flex-container">
+            <div class = "cert">
+                <div class = "bodycon">
+                    <div class = "header">
+                        <h2 class = "headtxt">Certificates</h2>
+                    </div>
+                    <div class = "content">
+                        <img class = "img" alt="Cert 1" src="images/cert-img1.png"/>
+                        <div class = "txt">
+                            <p class = "title">Certificate of Residency</p>
+                            <div class = "desc1">    
+                                <p>
+                                    Description:<br>
+                                    A Certificate of Residency is a document issued by the local government unit (LGU) 
+                                    of the Philippines certifying that a person is a resident of a particular barangay, 
+                                    municipality, or city within its jurisdiction. This document may be required for 
+                                    various purposes such as availing of government services, applying for a job, 
+                                    enrolling in school, or applying for a business permit.
+                                    <br><br>
+                                    Requirements:
+                                </p>
+                                <div class = "reqstxt1">
+                                    <div class = "col">
+                                        <p>1. Valid ID<br>2. Proof of Residency</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class = "btn" onclick = "applycert(1)">APPLY</button>
+                        <div class = "applycert" id = "applycert1">
+                            <img class = "processicon" alt="loading gif" src="images/loading.gif">
+                            <p class = "processtxt1" >REQUIREMENT SUBMISSION</p>
+                            <p class = "processtxt2">
+                                To prevent denial of certificate application...<br>
+                                Kindly submit the necessary requirements for the applied certificate to be approved<br>
+                                Click the <b>OKAY</b> button to continue
+                            </p>
+                            <div class = "processbtncont">
+                                <button class = "processbtn1" onclick="window.location.href = '/membapplyresidency'">OKAY</button>
+                                <button class = "processbtn2" onclick="closeapplycert(1)">CANCEL</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "content">
+                        <img class = "img" alt="Cert 2" src="images/cert-img2.png"/>
+                        <div class = "txt">
+                            <p class = "title">Barangay Clearance</p>
+                            <div class = "desc2">    
+                                <p>
+                                    Description:<br>
+                                    A Barangay Clearance is a document issued by the barangay (the smallest
+                                    administrative division in the Philippines) certifying that a person is a
+                                    resident of the barangay and has no pending legal or administrative obligations
+                                    within the community. This document may be required for various purposes such
+                                    as applying for a job, traveling abroad, applying for a business permit, or
+                                    availing of government services.
+                                    <br><br>
+                                    Requirements:
+                                </p>
+                                <div class = "reqstxt1">
+                                    <div class = "col">
+                                        <p>1. Valid ID<br>2. Proof of Residency</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class = "btn" onclick = "applycert(2)">APPLY</button>
+                        <div class = "applycert" id = "applycert2">
+                            <img class = "processicon" alt="loading gif" src="images/loading.gif">
+                            <p class = "processtxt1" >REQUIREMENT SUBMISSION</p>
+                            <p class = "processtxt2">
+                                To prevent denial of certificate application...<br>
+                                Kindly submit the necessary requirements for the applied certificate to be approved<br>
+                                Click the <b>OKAY</b> button to continue
+                            </p>
+                            <div class = "processbtncont">
+                                <button class = "processbtn1" onclick="window.location.href = '/membapplyclearance'">OKAY</button>
+                                <button class = "processbtn2" onclick="closeapplycert(2)">CANCEL</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "content">
+                        <img class = "img" alt="Cert 3" src="images/cert-img3.png"/>
+                        <div class = "txt">
+                            <p class = "title">Certificate of Being Indigent</p>
+                            <div class = "desc2">    
+                                <p>
+                                    Description:<br>
+                                    A Certificate of Indigency is a document issued by the local government unit
+                                    (LGU) in the Philippines certifying that a person is indigent and therefore
+                                    eligible for certain social services and programs provided by the government.
+                                    This certificate is usually required for availing free or discounted healthcare
+                                    services, educational assistance, and other welfare benefits.
+                                    <br><br>
+                                    Requirements:
+                                </p>
+                                <div class = "reqstxt1">
+                                    <div class = "col">
+                                        <p>1. Valid ID<br>2. Barangay Clearance</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class = "btn" onclick = "applycert(3)">APPLY</button>
+                        <div class = "applycert" id = "applycert3">
+                            <img class = "processicon" alt="loading gif" src="images/loading.gif">
+                            <p class = "processtxt1" >REQUIREMENT SUBMISSION</p>
+                            <p class = "processtxt2">
+                                To prevent denial of certificate application...<br>
+                                Kindly submit the necessary requirements for the applied certificate to be approved<br>
+                                Click the <b>OKAY</b> button to continue
+                            </p>
+                            <div class = "processbtncont">
+                                <button class = "processbtn1" onclick="window.location.href = '/membapplyindigent'">OKAY</button>
+                                <button class = "processbtn2" onclick="closeapplycert(3)">CANCEL</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "content">
+                        <img class = "img" alt="Cert 3" src="images/cert-img3.png"/>
+                        <div class = "txt">
+                            <p class = "title">Business Permit Application</p>
+                            <div class = "desc1">    
+                                <p>
+                                    Description:<br>
+                                    This is for the application of a <b>NEW</b> business permit.<br>
+                                    A Business Permit is a document issued by the local government unit (LGU) in the
+                                    Philippines allowing an individual or company to conduct business within its
+                                    jurisdiction. It is a legal requirement for any business to operate and must
+                                    be renewed annually.
+                                    <br><br>
+                                    Requirements:
+                                </p>
+                                <div class = "reqstxt1">
+                                    <div class = "col1">
+                                        <p>1. Valid ID<br>2. Proof of Business Ownership<br>3. Barangay Clearance</p>
+                                    </div>
+                                    <div class = "col1">
+                                        <p>4. Mayor's permit<br>5. Fire Safety Inspection Certificate<br>6. Environmental Clearance Certificate</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class = "btn" onclick = "applycert(4)">APPLY</button>
+                        <div class = "applycert" id = "applycert4">
+                            <img class = "processicon" alt="loading gif" src="images/loading.gif">
+                            <p class = "processtxt1" >REQUIREMENT SUBMISSION</p>
+                            <p class = "processtxt2">
+                                To prevent denial of certificate application...<br>
+                                Kindly submit the necessary requirements for the applied certificate to be approved<br>
+                                Click the <b>OKAY</b> button to continue
+                            </p>
+                            <div class = "processbtncont">
+                                <button class = "processbtn1" onclick="window.location.href = '/membapplynewbspermit'">OKAY</button>
+                                <button class = "processbtn2" onclick="closeapplycert(4)">CANCEL</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "content">
+                        <img class = "img" alt="Cert 3" src="images/cert-img3.png"/>
+                        <div class = "txt">
+                            <p class = "title">Business Permit Renewal</p>
+                            <div class = "desc2">    
+                                <p>
+                                    Description:<br>
+                                    This is for the application of a business permit <b>RENEWAL</b>.<br>
+                                    A Business Permit is a document issued by the local government unit (LGU) in the
+                                    Philippines allowing an individual or company to conduct business within its
+                                    jurisdiction. It is a legal requirement for any business to operate and must
+                                    be renewed annually.
+                                    <br><br>
+                                    Requirements:
+                                </p>
+                                <div class = "reqstxt1">
+                                    <div class = "col1">
+                                        <p>1. Valid ID<br>2. Former Business Permit<br>3. Barangay Clearance</p>
+                                    </div>
+                                    <div class = "col1">
+                                        <p>4. Mayor's permit<br>5. Fire Safety Inspection Certificate<br>6. Environmental Clearance Certificate</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class = "btn" onclick = "applycert(5)">APPLY</button>
+                        <div class = "applycert" id = "applycert5">
+                            <img class = "processicon" alt="loading gif" src="images/loading.gif">
+                            <p class = "processtxt1" >REQUIREMENT SUBMISSION</p>
+                            <p class = "processtxt2">
+                                To prevent denial of certificate application...<br>
+                                Kindly submit the necessary requirements for the applied certificate to be approved<br>
+                                Click the <b>OKAY</b> button to continue
+                            </p>
+                            <div class = "processbtncont">
+                                <button class = "processbtn1" onclick="window.location.href = '/membapplyrenewbspermit'">OKAY</button>
+                                <button class = "processbtn2" onclick="closeapplycert(5)">CANCEL</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "footer"></div>
+                </div>
+            </div>
+            <div class = "sidecon">
+                <h2 class = "contact">CONTACT NUMBERS</h2>
+                <div class = "contactbox">
+                    <h3>PHONE</h3>
+                    <p>85353992 / 84639631</p>
+                </div>
+                <div class = "contactbox">
+                    <h3>POLICE</h3>
+                    <p>85322145</p>
+                </div>
+                <div class = "contactbox">
+                    <h3>FIRE</h3>
+                    <p>85322189 / 85322402</p>
+                </div>
+                <div class = "contactbox">
+                    <h3>HOSPITAL</h3>
+                    <p>85320480</p>
+                </div>
+                <div class = "contactbox">
+                    <h3>DISASTER / RESCUE</h3>
+                    <p>85332225</p>
+                </div>
+                <h2 class = "address">ADDRESS</h2>
+                <div class = "contactbox">
+                    <p>Kalentong Shaw Boulevard,</p>
+                    <p>Daang Bakal, Mandaluyong City</p>
+                </div>
+                <div class = "motto">
+                    <h3>“ Hindi mag lilingkod ng pangsarili lang, kundi maglilingkod ng pangkalahatan!”</h3>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/time.js"></script>
+        <script src="scripts/certapplied.js"></script>
+    </body>
+</html>

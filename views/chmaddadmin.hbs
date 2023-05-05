@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Anek Gujarati' rel='stylesheet'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="main" onload="initClock()">
+        <div class="headcon">
+            <div class="logocon">
+                <img alt="brgy logo" src="images/logo.png"/>
+            </div>
+            <h1 class="brgy">Information System of Barangay Daang Bakal</h1>
+            <div class="toptime">
+                <span id = "hour">00</span> :
+                <span id = "minute">00</span>
+                <span id = "period">AM</span>
+            </div>
+        </div>
+        <div class="headcon">
+            <div class = "admintitle">
+                <p>BARANGAY CHAIRMAN</p>
+            </div>
+            <div class="adminbottomtime">
+                <span id = "day">Day</span>,
+                <span id = "month">Month</span>
+                <span id = "date">00</span>
+                <span id = "year">Year</span>
+            </div>
+        </div>
+        <div class = "flex-container">
+            <div class = "chmadmin">
+                <div class = "bodycon">
+                    <div class = "header">
+                        <h2 class = "headtxt">Add Admin Account</h2>
+                    </div>
+                    
+
+                    <!-- LISTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FORM -->
+                    <div class = "adminlistcont">
+                        <div id = "adminlistcont1">
+                            {{#each admins}}
+                            <div class = "admincont">
+                                <img class = "admimg" alt = "Admin Icon" src = "images/chmadd-icon2.png">
+                                <div class = "txtcont1">
+                                    <p class = "datatxt">{{email}}</p>
+                                    <p class = "labeltxt">USERNAME</p>
+                                </div>
+                                <p class = "dashtxt">-</p>
+                                <div class = "txtcont2">
+                                    <p class = "datatxt">{{fname}} {{lname}}</p>
+                                    <p class = "labeltxt">ADMINISTRATOR NAME</p>
+                                </div>
+                                <p class = "dashtxt">-</p>
+                                <div class = "txtcont2">
+                                    <p class = "datatxt">{{phoneNumber}}</p>
+                                    <p class = "labeltxt">CONTACT NUMBER</p>
+                                </div>
+                            </div>
+                            {{/each}}
+
+
+                            <div class = "btncont">
+                                <button class = "leftbtn" onclick = "addadmin()">ADD ADMIN</button>
+                                <button class = "rightbtn" onclick = "deleteadmin()">DELETE ADMIN</button>
+                            </div>
+                            <div class = "footer"></div>
+                        </div>
+                        <!-- LISTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FORM -->
+
+
+                        
+
+                        <!-- DELETEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE FORM -->
+                        <form action = "/deleteadmin" method = "POST">
+                            <div id = "adminlistcont2">
+                                {{#each admins}}
+                                <div class = "admincont">
+                                    <input type = "radio" name = "selected" required = "true" checked = "true" value = "{{email}}">
+                                    <img class = "admimg" alt = "Admin Icon" src = "images/chmadd-icon2.png">
+                                    <div class = "txtcont1">
+                                        <p class = "datatxt">{{email}}</p>
+                                        <p class = "labeltxt">USERNAME</p>
+                                    </div>
+                                    <p class = "dashtxt">-</p>
+                                    <div class = "txtcont2">
+                                        <p class = "datatxt">{{fname}} {{lname}}</p>
+                                        <p class = "labeltxt">ADMINISTRATOR NAME</p>
+                                    </div>
+                                    <p class = "dashtxt">-</p>
+                                    <div class = "txtcont2">
+                                        <p class = "datatxt">{{phoneNumber}}</p>
+                                        <p class = "labeltxt">CONTACT NUMBER</p>
+                                    </div>
+                                </div>
+                                {{/each}}
+                                <div class = "btncont">
+                                    <input type = "submit" class = "leftbtn" value = "DELETE" onclick = "window.location.href = 'chmaddadmin.html'"/>
+                                    <input type = "reset" class = "rightbtn" value = "CANCEL" onclick = "canceldelete()"/>
+                                </div>
+                                <div class = "footer"></div>
+                            </div>
+                        </form>
+                        <!-- DELETEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE FORM -->
+
+
+                        <!-- POP UPPPPPPPPPPPPPP FORMMMM -->
+                        <form action = "/datahead" method = "POST">
+                            <div class = "addpopup" id = "popup">
+                                <div class = "leftcont">
+                                    <img class = "popupicon" alt="loading gif" src="images/chmadd-icon1.png">
+                                    <div class = "popupbtncont">
+                                        <input type = "submit" class = "popupbtn1" value = "SUBMIT"/>
+                                    </div>
+                                    <div class = "popupbtncont">
+                                        <input type = "reset" class = "popupbtn1" value = "CANCEL" onclick="closepopup()"/>
+                                    </div>
+                                </div>
+                                <div class = "rightcont">
+                                    <p class = "popuptxt1" >CREATE NEW ADMIN ACCOUNT</p>
+                                    <div class = "flex-justify">
+                                        <div>
+                                            <p class = "addlabeltxt">USERNAME</p>
+                                            <input type = "email" class = "addinputtxt1"  required = "true" id = "adminusername" name = "adminusername" placeholder = "Enter Admin Username">
+                                        </div>
+                                        <div>
+                                            <p class = "addlabeltxt2">CONTACT NUMBER</p>
+                                            <input type = "tel" class = "addinputtxt2"  required = "true" id = "admincontactnum" name = "admincontactnum" placeholder = "Type Admin Contact Number">
+                                        </div>
+                                    </div>
+                                    <div class = "flex-justify">
+                                        <div>
+                                            <p class = "addlabeltxt3">ADMIN  FIRST NAME</p>
+                                            <input type = "text" class = "addinputtxt1"  required = "true" id = "adminfname" name = "adminfname" placeholder = "Type Admin First Name">
+                                            
+                                        </div>
+                                        <div>
+                                            <p class = "addlabeltxt4">ADMIN  LAST NAME</p>
+                                            <input type = "text" class = "addinputtxt2"  required = "true" id = "adminlname" name = "adminlname" placeholder = "Type Admin Last Name">
+                                        </div>
+                                    </div>
+                                    <div class = "flex-justify">
+                                        <div>
+                                            <p class = "addlabeltxt3">PASSWORD</p>
+                                            <input type = "password" class = "addinputtxt1"  required = "true" id = "adminpassword" name = "adminpassword" placeholder = "Type Admin Password">
+                                        </div>
+                                        <div>
+                                            <p class = "addlabeltxt4">CONFIRM PASSWORD</p>
+                                            <input type = "password" class = "addinputtxt2"  required = "true" id = "confirmadminpassword" name = "confirmadminpassword" placeholder = "Retype Admin Password">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- POP UPPPPPPPPPPPPPP FORMMMM -->
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class = "sidecon">
+                <div class = "contactbox3">
+                    <p onclick = "window.location.href = '/chmhome'">HOME</p>
+                </div>
+                <div class = "contactbox4">
+                    <p onclick = "window.location.href = '/chmannouncements'">ANNOUNCEMENTS</p>
+                </div>
+                <div class = "contactbox4">
+                    <p onclick = "window.location.href = '/chmcertificates'">CERTIFICATES</p>
+                </div>
+                <div class = "contactbox4">
+                    <p onclick = "window.location.href = '/chmaddadmin'">ADD ADMIN</p>
+                </div>
+                <div class = "contactbox4">
+                    <p onclick = "window.location.href = '/'">LOG OUT</p>
+                </div>
+                <div class = "motto" style = "margin-top: 6vh;">
+                    <h3>“ Hindi mag lilingkod ng pangsarili lang, kundi maglilingkod ng pangkalahatan!”</h3>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/adddeleteadmin.js"></script>
+        <script src="scripts/time.js"></script>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Anek Gujarati' rel='stylesheet'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="main" onload="initClock()">
+        <div class="headcon">
+            <div class="logocon">
+                <img alt="brgy logo" src="images/logo.png"/>
+            </div>
+            <h1 class="brgy">Information System of Barangay Daang Bakal</h1>
+            <div class="toptime">
+                <span id = "hour">00</span> :
+                <span id = "minute">00</span>
+                <span id = "period">AM</span>
+            </div>
+        </div>
+        <div class="headcon">
+            <div class = "admintitle">
+                <p>BARANGAY CHAIRMAN</p>
+            </div>
+            <div class="adminbottomtime">
+                <span id = "day">Day</span>,
+                <span id = "month">Month</span>
+                <span id = "date">00</span>
+                <span id = "year">Year</span>
+            </div>
+        </div>
+        <div class = "flex-container">
+            <div class = "admcerts">
+                <div class = "bodycon">
+                    <div class = "header">
+                        <h2 class = "headtxt">Certificates</h2>
+                    </div>
+                    <div class = "flex-justify">
+                        <div class = "certlistcont">
+                            <div>
+                                <div class = "certlistheader">
+                                    <div class = "container">
+                                        <p class = "labeltxt">Name</p>
+                                    </div>
+                                    <div class = "container">
+                                        <p class = "labeltxt">Certificate</p>
+                                    </div>
+                                    <div class = "container2">
+                                        <p class = "labeltxt">Status</p>
+                                    </div>
+                                </div>
+                                {{#each certificates}}
+                                <form method="post" action="/showfullcert">
+                                    <input type="hidden" name="email" value="{{email}}">
+                                    <input type="hidden" name="document" value="{{document}}">
+                                    <input type="hidden" name="code" value="{{requestcode}}">
+                                    <div class = "certlist" id = "pendingrow1">
+                                    <div class = "container">
+                                        <p class = "certtxt" id = "namecert">{{email}}</p>
+                                    </div>
+                                    <div class = "container">
+                                        <p class = "certtxt" id = "titlecert">{{document}}</p>
+                                    </div>
+                                    <div class = "container2">
+                                        <p class = "certtxt" id = "statuscert">{{status}}</p>
+                                    </div>
+                                    <div class = "container3">
+                                        <button class = "btn" >EDIT/VIEW</button>
+                                        <button class = "btn" style = "display: none" id = "removebtn" onclick = "XXX">DELETE</button>
+                                    </div>
+                                </div>
+                                </form>
+                                {{/each}}
+                                <div class = "footer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "sidecon">
+                <div class = "contactbox3">
+                    <p onclick = "window.location.href = '/chmhome'">HOME</p>
+                </div>
+                <div class = "contactbox4">
+                    <p onclick = "window.location.href = '/chmannouncements'">ANNOUNCEMENTS</p>
+                </div>
+                <div class = "contactbox4">
+                    <p onclick = "window.location.href = '/chmcertificates'">CERTIFICATES</p>
+                </div>
+                <div class = "contactbox4">
+                    <p onclick = "window.location.href = '/chmaddadmin'">ADD ADMIN</p>
+                </div>
+                <div class = "contactbox4">
+                    <p onclick = "window.location.href = '/login'">LOG OUT</p>
+                </div>
+                <div class = "motto" style = "margin-top: 6vh;">
+                    <h3>“ Hindi mag lilingkod ng pangsarili lang, kundi maglilingkod ng pangkalahatan!”</h3>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/nopendingcert.js"></script>
+        <script src="scripts/time.js"></script>
+    </body>
+</html>

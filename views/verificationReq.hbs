@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Anek Gujarati' rel='stylesheet'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forgot Password</title>
+	</head>
+	<body class = "password">
+        <div class = "headcon"></div>
+        <div class = "bodycon">
+            <div class = "forgotpass">
+                <form action="/verificationReq" method="post">
+                    <img class = "img" alt = "brgy logo" src = "images/logo.png">
+                    <h2 class = "title">Information System of Barangay Daang Bakal</h2>
+                    <p class = "info">Please enter your username to search for your account</p>
+                    <div class = "input">
+                        <p class = "label">Username :</p>
+                        <input name="username" type = "text" placeholder = "Enter Username"  required/>
+                    </div>
+                    <img class = "return" onclick="window.location.href='/login'" alt = "Return Icon" src = "images/back.png">
+                    <button class = "btn" type="submit">ENTER</button>
+                </form>
+            </div>
+        </div>
+	</body>
+</html>

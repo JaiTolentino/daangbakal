@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Anek Gujarati' rel='stylesheet'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class = "register">
+        <div class = "headcon">
+            <img class = "logocon" alt = "Brgy Logo" src = "images/logo.png">
+            <h1 class = "brgy">Information System of Barangay Daang Bakal</h1>
+        </div>
+        <div class = "first">
+            <div class = "second">
+                <div class = "third">
+                    <div class = "fourth">
+                        <div class = "fifth">
+                            <div class = "bodycon">
+                                <div class = "formcont">
+                                    <form action="/datamember" method="post" onsubmit = "return validatepass()">
+                                        <div class = "header">
+                                            <p class = "headtxt">Registration</p>
+                                        </div>
+                                        <div class = "rowcont">
+                                            <div class = "fname">
+                                                <p>FIRST NAME</p>
+                                                <input type = "text" id = "firstname" name = "firstname" placeholder = "Enter First Name" required/>
+                                            </div>
+                                            <div class = "lname">
+                                                <p>LAST NAME</p>
+                                                <input type = "text" id = "lastname" name = "lastname" placeholder = "Enter Last Name" required/>
+                                            </div>
+                                        </div>
+                                        <div class = "rowcont">
+                                            <div class = "email">
+                                                <p>EMAIL ADDRESS</p>
+                                                <input type = "email" id = "email" name = "email" placeholder = "Enter Email Address" required/>
+                                            </div>
+                                            <div class = "contact">
+                                                <p>CONTACT NUMBER</p>
+                                                <input type = "tel" id = "contactnum" name = "contactnum" placeholder = "Enter Number" required/>
+                                            </div>
+                                        </div>
+                                        <div class = "rowcont">
+                                            <div class = "sex">
+                                                <p>SEX</p>
+                                                <select id = "sex" name="sex" required>
+                                                    <option value="" disabled selected hidden>Select Sex</option>
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option>
+                                                </select>
+                                            </div>
+                                            <div class = "marital">
+                                                <p>MARITAL STATUS</p>
+                                                <select id = "maritalstatus" name="maritalstatus" required>
+                                                    <option value="" disabled selected hidden>Select Status</option>
+                                                    <option value="Single">Single</option>
+                                                    <option value="Married">Married</option>
+                                                    <option value="Divorced">Divorced</option>
+                                                    <option value="Widowed">Widowed</option>
+                                                </select>
+                                            </div>
+                                            <div class = "bday">
+                                                <p>BIRTHDATE</p>
+                                                <input type = "date" id = "birthdate" name = "birthdate" placeholder = "dd/mm/yy" required/>
+                                            </div>
+                                        </div>
+                                        <div class = "passwordcont">
+                                            <div class = "input">
+                                                <div class = "pass">
+                                                    <p>PASSWORD</p>
+                                                    <input type = "password" id = "password" name = "password" placeholder = "Enter Password" required/>
+                                                </div>
+                                                <div class = "confirmpass">
+                                                    <p>CONFIRM PASSWORD</p>
+                                                    <input type = "password" id = "confirmpassword" name = "confirmpassword" placeholder = "Re-enter Password" required/>
+                                                </div>
+                                            </div>
+                                            <div class = "instruction">
+                                                <p>A strong password has a combination of letters, numbers and special characters<br><br>
+                                                    Letters: a - z<br><br>
+                                                    Numbers: 1 - 9<br><br>
+                                                    Special Char: ! &nbsp@ &nbsp# &nbsp$ &nbsp...</p>
+                                            </div>
+                                        </div>
+                                        <div class = "btncont">
+                                            <button class="btn1" type="submit">SUBMIT</button>
+                                            <button class="btn2" type="reset" onclick="window.location.href='/headpersonalinfo'">Cancel</button>
+                                        </div>
+                                        <div class = "footer"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src = "scripts/validateregistration.js"></script>
+    </body>
+</html>
